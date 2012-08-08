@@ -1,0 +1,541 @@
+/*
+ * Author: Louis Meadows 
+ * Organization: mobiFoundry 
+ * Date: November 24th 2009
+ *
+ * 
+ */
+
+body {
+	font-family: verdana, arial;
+	margin: 0;
+	background: #9AE4E8;
+}
+
+a{
+	outline: none;
+	text-decoration: none;
+}
+
+table, td, tr {
+	padding: 0;
+	margin: 0;
+}
+
+img, a {
+	border: 0 ;
+}
+
+.clear {
+	clear: both !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.center {
+	text-align: center;
+}
+
+
+#container {
+	background: #9ae4e8;
+	position: relative;
+}
+
+#content {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#content th {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	background: #7fcce5;
+	padding: 7px 10px;
+	text-align: left;
+}
+
+.input_container input {
+	width: 100%;
+	height: 45px;
+	display: inline-block;
+	color: #999999;
+	font-size: 22px;
+	font-weight: bold;	
+	border: 1px solid #7FCCE5;
+}
+
+/* ******* */
+/* TOP BAR */
+/* ******* */
+#top_bar {
+	width: 100%;
+	background: url(images/top_bg.png) repeat-x;
+	height: 67px;
+}
+
+#top_bar .top_table {
+    width: 100%;
+    vertical-align: middle;
+	height: 100%;
+}
+
+#top_bar .top_table .top_button {
+    width: 78px;
+	vertical-align: middle
+}
+
+#top_bar .top_table .top_title {
+	text-align: center;
+}
+
+#top_bar .top_table .top_title .stew_title {
+	background: url(images/big_logo.png) no-repeat;
+	width: 90px;
+	height: 41px;
+	display: inline-block;
+}
+
+/* ******* */
+/* BUTTONS */
+/* ******* */
+.button {
+	width: 116px;
+	height: 37px;
+	background: url(images/button_bg.png) no-repeat;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 3px;
+	padding-top: 12px;
+	display: inline-block;
+	text-align: center;	
+}
+
+.button.red {
+	background: url(images/button_red_bg.png) no-repeat;	
+}
+/* ***** */
+/* LOGIN */
+/* ***** */
+.login_container{
+	width: 100%;
+	background: url(images/friends_bg.png) #b5ecf0 repeat-x;
+	border-bottom:2px solid #7FCCE5;
+}
+
+.login_container table{
+	width: 100%;
+}
+
+.login_container table td{
+	color: #666666;
+	font-size: 17px;
+	padding: 5px 10px;
+}
+
+.login_container .table_subtitle {
+	color: #666666;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 4px 10px;
+}
+.login_container .button_container {
+	text-align: center;
+	padding-top:10px;
+}
+
+/* ************* */
+/* UPDATE STATUS */
+/* ************* */
+.status_container{
+	width: 100%;
+	background: url(images/friends_bg.png) #b5ecf0 repeat-x;
+}
+
+.status_container table{
+	width: 100%;
+}
+
+.status_container table .title{
+	color: #666666;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px 10px;
+	vertical-align: bottom;
+}
+
+.status_container table .title .title_text{
+	float: left;
+	margin-top: 4px;
+}
+
+.status_container table .characters_remaining {
+	text-align: right;
+	float: right;
+	color: #999999;
+	font-size: 24px;
+}
+
+.status_container table .input_container {
+	vertical-align: top;
+	padding-top: 3px;
+	padding-left: 10px;
+	padding-right:10px;
+}
+
+.status_container table .input_container textarea{
+	width: 100%;
+	height: 120px;
+	display: inline-block;
+	color: #999999;
+	font-size: 18px;
+	font-weight: bold;
+	border: 1px solid #7FCCE5;	
+}
+.status_container table .button_container{
+	width: 126px;
+	vertical-align: top;
+}
+.status_container table .latest_container{
+	vertical-align: top;
+	color: #666666;
+	font-size: 16px;
+	padding: 5px 5px 5px 10px;
+}
+.status_container table .latest_container .latest{
+	color: #0099cc;
+	margin-right: 5px;
+	font-weight: bold;
+}
+.status_container table .latest_container .ago {
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* ****** */
+/* SEARCH */
+/* ****** */
+.search_container{
+	width: 100%;
+	background: url(images/friends_bg.png) #b5ecf0 repeat-x;
+}
+.search_container table{
+	width: 100%;
+}
+.search_container table .input_container {
+	vertical-align: top;
+	padding-top: 3px;
+	padding-left: 10px;
+	padding-right:10px;
+}
+.search_container table .button_container{
+	width: 126px;
+}
+
+/* ******** */
+/* SETTINGS */
+/* ******** */
+.settings_container{
+	width: 100%;
+	background: url(images/friends_bg.png) #b5ecf0 repeat-x;
+	border-bottom:2px solid #7FCCE5;
+}
+
+.settings_container table{
+	width: 100%;
+}
+
+.settings_container table td{
+	color: #666666;
+	font-size: 17px;
+	padding: 5px 10px;
+}
+
+.settings_container .table_subtitle {
+	color: #666666;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 7px 10px;
+}
+.settings_container .button_container {
+	text-align: center;
+	padding-top:10px;
+}
+
+.settings_container .select_container {
+	padding: 5px;
+}
+
+.settings_container .select_container select{
+	display: inline-block;
+	color: #999999;
+	font-size: 18px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.settings_container .radio_startupPage input,
+.settings_container .radio_startupPage label {
+	margin-bottom: 12px;
+}
+
+/* ************ */
+/* TWEETS TABLE */
+/* ************ */
+.tweets_table {
+	width: 100%;
+}
+
+.tweets_table .title td {
+	padding: 8px 5px;
+}
+
+.tweets_table .tweet{
+	background: url(images/tr_bg.png) repeat-x bottom #fff;
+}
+.tweets_table .tweet .image{
+	padding: 5px;
+	width: 48px;
+	vertical-align: top;
+}
+
+.tweets_table .tweet .image img{
+	width: 100%;
+}
+
+.tweets_table .tweet .tweet_content{
+	padding: 5px;
+	vertical-align: top;
+}
+.tweets_table .tweet .name {
+	color: #0099cc;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.tweets_table .tweet .status {
+	color: #666666;
+	font-size: 18px;
+}
+
+.tweets_table .tweet .ago {
+	margin-top: 7px;
+	color: #666666;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.tweets_table .tweet .ago .from {
+	font-weight: normal;
+	font-style: italic;
+	padding-left: 3px;
+}
+
+
+/* ***** */
+/* POPUP */
+/* ***** */
+.popup {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: url(images/shadow.png) repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.popup .popup_window {
+	width: 100%;
+	height: 100%;	
+}
+
+.popup .popup_window tr td{
+	height: 33%;
+}
+
+.popup .popup_window .background {
+	background: url(images/pop_up_bg.png) repeat;
+}
+
+.popup .popup_window .title {
+	padding: 8px;
+	padding-top: 15px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.popup .popup_window .subtitle {
+	padding: 0px 7px 7px 7px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+.popup .popup_window .loader{
+	padding: 5px;
+	text-align: center;
+}
+
+.popup .popup_window tr {
+	height: 33%;
+}
+
+/* **** */
+/* MENU */
+/* **** */
+.buttons_bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 84px;
+	background: url(images/top_bg.png) bottom repeat-x #b7ecef;
+	text-align: center;
+	padding-top: 2px;
+	border-top: 2px solid #7dcbe5;
+}
+.buttons_bottom .button_container{
+	width: 81px;
+	height: 81px;
+	background: url(images/button_bottom_bg.png) no-repeat;
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+.buttons_bottom .activated {
+	background:url(images/button_bottom_activated_bg.png) no-repeat;
+}
+
+.buttons_bottom .button_container .button_bottom {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: 81px;
+	height: 25px;
+	padding-top: 56px;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+}
+
+#button_update {
+	background-image: url(images/icon_update.png);
+}
+
+#button_search {
+	background-image: url(images/icon_friends.png);
+}
+
+#button_settings {
+	background-image: url(images/icon_settings.png);
+}
+
+/* ****************** */
+/* MENU FOR LANDSCAPE */
+/* ****************** */
+.buttons_bottom_landscape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 84px;
+	height: 87.5%;
+	padding-top: 7%;
+    background: url(images/top_bg_landscape.png) right repeat-y #b7ecef;
+    text-align: center;
+    border-left: 2px solid #7dcbe5;
+}
+.buttons_bottom_landscape .button_container{
+    width: 81px;
+    height: 81px;
+    background: url(images/button_bottom_bg.png) no-repeat;
+    display: inline-block;
+    margin: 5px 0px;
+}
+
+.buttons_bottom_landscape .activated {
+    background:url(images/button_bottom_activated_bg.png) no-repeat;
+}
+
+.buttons_bottom_landscape .button_container .button_bottom {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 81px;
+    height: 25px;
+    padding-top: 56px;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+/* ************************* */
+/* BIGGER CHECKBOX FOR TOUCH */
+/* ************************* */
+.cb {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.cb li{
+	padding: 0;
+	margin: 0;
+}
+
+.cb li label {
+	background: transparent url(images/checkbox.png) no-repeat scroll 0 6px;
+	padding: 8px 0 5px 30px;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	height: 25px;
+}
+
+.cb li.checked label {
+	background-image: url(images/checkbox_activated.png);
+}
+
+.cb li input {
+	position: absolute; left: -9999px;
+}
+
+/* ********************** */
+/* BIGGER RADIO FOR TOUCH */
+/* ********************** */
+.radio {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.radio li{
+	padding: 0;
+	margin: 0;
+}
+
+.radio li label {
+	background: transparent url(images/radio.png) no-repeat scroll 0 6px;
+	padding: 8px 0 5px 30px;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	height: 25px;
+}
+
+.radio li.checked label {
+	background-image: url(images/radio_activated.png);
+}
+
+.radio li input {
+	position: absolute; left: -9999px;
+}

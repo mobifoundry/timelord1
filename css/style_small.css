@@ -1,0 +1,17 @@
+body {
+	#homeScreenView {
+    width: 308px;
+    height: 85px;
+    background: white;
+    overflow: hidden;
+  }
+ 
+  #homeScreenView th {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    background: #7fcce5;
+    padding: 4px 6px;
+    text-align: left;
+  }
+}

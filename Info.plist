@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Nokia//DTD PLIST 1.0//EN" "http://www.nokia.com/NOKIA_COM_1/DTDs/plist-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>DisplayName</key>
+        <string>TimeLord1 V0118 LPM082111</string>
+        <key>Identifier</key>
+        <string>com.TimeLord1.widget</string>
+        <key>Version</key>
+        <string>0.118.1</string>
+        <key>MainHTML</key>
+        <string>TimeLord.html</string>
+        <key>AllowNetworkAccess</key>
+        <true/>
+   <key>MiniViewEnabled</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html id="TimeLord1">
+ <!--
+ //http://www.w3.org/TR/widgets/
+            // Application: TimeLord1
+            // Company: Positively Front Street, Inc
+            // DBA: mobiFoundry 
+            // Author: Louis Meadows
+            // Target: Nokia WRT 1.0/1.1 E51/E71/E71x mobile phone
+            // Default now AT&T E71x, for E51 user will need to set cursor mode in options. 
+            // Date: Oct 2nd 2009
+            // Description: Job Management - Time and materials application
+            //
+            // TimeLord1 is a Job based tracking of Labor, Materials and Tasks (to-do list).
+            // It allows a Contractor to clock in/out personnel, track materials use and 
+            // task completion.  Supports up to 10 job locations with employees/subcontractors,
+            // materials and tasks at each. Advanced version supports bluetooth/location based
+            // clock in/out of employees/subcontractors when all jobs must run concurrently 
+            // and on schedule.  Labor and Materials tracking in real time provides for maximizing
+            // profit by reducing these key costs. Tracking and assigning of Job tasks allows for 
+            // better completion estimates for builders and project planners alike. Timelord1 was
+            // designed to run on the Nokia E51/71 business phone. 
+            //
+            // 04Nov09 RNM added Spanish text variables - all ending in "es" the international 2 
+            //         character code for SPAIN (Espana)
+            //         Although you sent me an example with "es" on the end of the variable name,
+            //         I felt it better to capitalize this, especially thinking ahead to the 20
+            //         different language versions we intend to support.  So "es" became "ES"  OK?
+            //
+            // 11Nov09 Added code to switch from English to Espana
+            //
+            // 12JAN10 Added code for switch to Swedish text provided by Niklas 
+            //
+            // 14JAN10 split javascript file
+            //
+            // 29JAN10 LPM added finish language file Finnish.js
+			// 14AUG11 LPM cleaning up initialization 
+			// 21AUG11 LPM implemented interHTML to fill in fullscreenview splash page
+			
+            -->
+
+<head><title>TimeLord1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<link href="./css/style_small.css" rel="stylesheet" type="text/css">
+<link href="./css/miniview.css" rel="stylesheet" type="text/css">
+<link href="./css/basic.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="javascript:init();">
+	
+<div id="fullScreenView" align="center"></div>
+
+<div id="homeScreenView" align="center"></div> 	
+ 
+<script type="text/javascript" src="./js/AboutView.js"></script>
+<script type="text/javascript" src="./js/action.js"></script>
+<script type="text/javascript" src="./js/AJobView.js"></script>
+<script type="text/javascript" src="./js/ClockIn.js"></script>
+<script type="text/javascript" src="./js/ClockOut.js"></script>
+<script type="text/javascript" src="./js/CompleteTask.js"></script>
+<script type="text/javascript" src="./js/EmpView.js"></script>
+<script type="text/javascript" src="./js/English.js"></script>
+<script type="text/javascript" src="./js/Espana.js"></script>
+<script type="text/javascript" src="./js/Finnish.js"></script>
+<script type="text/javascript" src="./js/init.js"></script>
+<script type="text/javascript" src="./js/JobLaborView.js"></script>
+<script type="text/javascript" src="./js/JobMaterialsPriceView.js"></script>
+<script type="text/javascript" src="./js/JobMaterialsQuantityView.js"></script>
+<script type="text/javascript" src="./js/JobMaterialsView.js"></script>
+<script type="text/javascript" src="./js/JobMenu.js"></script>
+<script type="text/javascript" src="./js/JobsButtonClicked.js"></script>
+<script type="text/javascript" src="./js/JobTaskView.js"></script>
+<script type="text/javascript" src="./js/MenuItemSelected.js"></script>
+<script type="text/javascript" src="./js/LanguageSelect.js"></script>
+<script type="text/javascript" src="./js/localizedTextStrings.js"></script>
+<script type="text/javascript" src="./js/MainMenu.js"></script>
+<script type="text/javascript" src="./js/MainView.js"></script>
+<script type="text/javascript" src="./js/MaterialPrice.js"></script>
+<script type="text/javascript" src="./js/MaterialsQuantity.js"></script>
+<script type="text/javascript" src="./js/MaterialsUsed.js"></script>
+<script type="text/javascript" src="./js/Pad.js"></script>
+<script type="text/javascript" src="./js/Swedish.js"></script>
+<script type="text/javascript" src="./js/Task.js"></script>
+<script type="text/javascript" src="./js/Tone.js"></script>
+<script type="text/javascript" src="./js/var.js"></script>
+<script type="text/javascript" src="WRTKit/WRTKit.js"></script>
+</body>
+</html>
+
