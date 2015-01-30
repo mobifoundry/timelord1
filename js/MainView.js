@@ -42,9 +42,10 @@
 // 13AUG11 LPM C5-00 does not load adding back Job button
 // 14AUG11 LPM added splash screen and view-hidden css to speed up load time and switch time
 // 21AUG11 LPM bring function (){ together to find error TypeError: Result of expression near '...})()...' [undefined] is not a function.
-function MainView() {
-  MainMenu();  // populate right and left menu keys	
-  Tone(); 
+// 30JAN15 LPM conversion to QML/js
+function mainView() {
+
+  tone();
   if (mainView == null)  {
     window.menu.setRightSoftkeyLabel("Enter", JobsButtonClicked ); 	
   	mainView = new ListView(MENU_ITEM_MAIN, viewlblmain);
@@ -61,6 +62,6 @@ function MainView() {
   }
    Jobnum = Jobcount;   // point to next empty job number
     // show the main view
-  uiManager.setView(mainView);	
+
 }
 

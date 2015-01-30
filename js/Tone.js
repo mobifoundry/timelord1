@@ -25,8 +25,9 @@
 // 13NOV10 LPM Add screen to select language. 
 // 29JAN10 LPM Added javascript code for switch to Finnish text provided by Niklas 
 // 29JAN10 LPM Continued Finnish
+// 30JAN15 LPM conversion to QML/js
 //--------------------------------------------------------------------------------------// 
-function Tone() {
+function tone() {
   // First lets get the reference to the sysinfo object.
 //  var sysinfo = document.embeds[0];
   // 

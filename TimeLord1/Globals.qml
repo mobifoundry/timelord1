@@ -1,24 +1,6 @@
-import QtQuick 2.4
-import QtQuick.Window 2.2
-import QtQuick.Controls 1.3
-ApplicationWindow {
-    id: window
-    color: "#Affeee"
-    visible: true
-    MenuBar {
-         menuBar: Menu {
-              title: "File"
-              MenuItem { text: "Open..." }
-              MenuItem { text: "Close" }
-          }
+import QtQuick 2.0
 
-          Menu {
-              title: "Edit"
-              MenuItem { text: "Cut" }
-              MenuItem { text: "Copy" }
-              MenuItem { text: "Paste" }
-          }
-      }
+Rectangle {
 
     Item {
         id: globals
@@ -460,13 +442,5 @@ ApplicationWindow {
         //property    var finnishMenuItem:new MenuItem(menulblFinnish, MENU_FINNISH);
     }
 
-    Item {
-
-        //      width: 200; height: 200
-        Loader {
-            id: pageLoader
-            source: "TimeLordOne.qml"
-        }
-    }
-
 }
+

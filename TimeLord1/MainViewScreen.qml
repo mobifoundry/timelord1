@@ -10,6 +10,8 @@ import QtQuick.Window 2.0
 import QtQuick.XmlListModel 2.0
 import "qrc:/../js/English.js" as Vars
 import "qrc:/../js/English.js" as English
+import "qrc:/../js/MainView.js" as MainView
+import "qrc:/../js/MainMenu.js" as MainMenu
 
 Rectangle {
     width: 1920
@@ -27,6 +29,8 @@ Rectangle {
             anchors.fill: parent
             onClicked:{
                English.setEnglish();
+               MainMenu.mainMenu();  // populate right and left menu keys
+               MainView.mainView();
             }
         }
 

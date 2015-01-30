@@ -47,7 +47,7 @@ SOURCES       = ..\TimeLord1\main.cpp debug\qrc_qml.cpp
 OBJECTS       = debug/main.o \
 		debug/qrc_qml.o
 
-DIST          =   ..\TimeLord1\main.cpp
+DIST          =  ..\TimeLord1\main.hxx ..\TimeLord1\main.cpp
 QMAKE_TARGET  = TimeLord1
 DESTDIR        = debug\ #avoid trailing-slash linebreak
 TARGET         = TimeLord1.exe
@@ -108,7 +108,12 @@ debug/qrc_qml.cpp: ../TimeLord1/qml.qrc \
 		../TimeLord1/TimeLordOne.qml \
 		../TimeLord1/MainViewScreen.qml \
 		../TimeLord1/main.qml \
-		../images/small_logo.png
+		../images/small_logo.png \
+		../js/MainView.js \
+		../js/MainMenu.js \
+		../js/Tone.js \
+		../js/English.js \
+		../js/var.js
 	C:\Qt\5.4\mingw491_32\bin\rcc.exe -name qml ..\TimeLord1\qml.qrc -o debug\qrc_qml.cpp
 
 compiler_moc_header_make_all:
@@ -127,7 +132,8 @@ compiler_clean: compiler_rcc_clean
 
 ####### Compile
 
-debug/main.o: ../TimeLord1/main.cpp C:/Qt/5.4/mingw491_32/include/QtGui/QGuiApplication \
+debug/main.o: ../TimeLord1/main.cpp ../TimeLord1/main.hxx \
+		C:/Qt/5.4/mingw491_32/include/QtGui/QGuiApplication \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
 		C:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
 		C:/Qt/5.4/mingw491_32/include/QtCore/qglobal.h \

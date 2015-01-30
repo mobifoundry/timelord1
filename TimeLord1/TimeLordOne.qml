@@ -1,6 +1,6 @@
 
-import QtQuick 2.2
-import QtQuick.Controls 1.1
+import QtQuick 2.3
+import QtQuick.Controls 1.3
 import QtQuick.Controls.Styles 1.1
 import QtQuick.Dialogs 1.1
 import QtQuick.Layouts 1.1
@@ -23,7 +23,7 @@ Rectangle {
         source: "qrc:/../images/small_logo.png"
 
     }
-    MainViewScreen{
+      MainViewScreen{
         id: mainViewScreen
         objectName: "mainViewScreen"
         x: 0

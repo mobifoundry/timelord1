@@ -28,7 +28,7 @@
 // 29JAN10 LPM Continued Finnish
 // 21AUG11 LPM bring function (){ together to find error TypeError: Result of expression near '...})()...' [undefined] is not a function.
 //--------------------------------------------------------------------------------------// 
-function MainMenu(){
+function mainMenu(){
 
     // Create the menu items
     
@@ -45,13 +45,6 @@ function MainMenu(){
     
     // It is possible to assign an individual callback function for each menu item 
     // so that the id argument can be ignored.
-	
-	try      {
-      menu.clear();
-      }
-    catch(err){
-      uiManager.showNotification(3000, "warning", LBL023 + err);
-     }
 
     aboutMenuItem.onSelect      = MenuItemSelected;
     mainMenuItem.onSelect       = MenuItemSelected;
