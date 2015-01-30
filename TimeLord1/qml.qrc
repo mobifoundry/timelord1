@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>TimeLordOne.qml</file>
+        <file>MainViewScreen.qml</file>
+        <file>../images/small_logo.png</file>
+        <file>../js/English.js</file>
+        <file>../js/var.js</file>
+    </qresource>
+</RCC>

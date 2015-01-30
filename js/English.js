@@ -8,8 +8,8 @@
 // * 13JAN10 Louis Meadows, updated.
 //   21AUG11 LPM 
 // */
-function English(){
-	TimeLord = " TimeLord1 ";
+function setEnglish(){
+    globals.timeLord = " TimeLord1 ";
 
 	WARN001  = " Employee name or number ";
 	WARN002  = " Please enter Job ";
