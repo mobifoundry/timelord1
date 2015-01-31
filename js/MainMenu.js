@@ -46,16 +46,8 @@ function mainMenu(){
     // It is possible to assign an individual callback function for each menu item 
     // so that the id argument can be ignored.
 
-    aboutMenuItem.onSelect      = MenuItemSelected;
-    mainMenuItem.onSelect       = MenuItemSelected;
 
-    cursorModeMenuItem.onSelect = MenuItemSelected;
-    tabModeMenuItem.onSelect    = MenuItemSelected;
-	
-	EspanaMenuItem.onSelect     = MenuItemSelected;
-	EnglishMenuItem.onSelect    = MenuItemSelected;
-	SwedishMenuItem.onSelect    = MenuItemSelected;
-	FinnishMenuItem.onSelect    = MenuItemSelected; 
+
     
     // Tab mode is the default so let's add cursor mode item to the main menu
 	

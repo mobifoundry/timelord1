@@ -14,15 +14,7 @@ Rectangle {
     height: Screen.height
     color: "darkblue"
 
-    Image {
-        id: banner
-        x: 0
-        y: 0
-        width: parent.width
-        height: parent.height/15
-        source: "qrc:/../images/small_logo.png"
 
-    }
       MainViewScreen{
         id: mainViewScreen
         objectName: "mainViewScreen"
