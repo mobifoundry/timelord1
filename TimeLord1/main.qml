@@ -2,6 +2,7 @@ import QtQuick 2.4
 import QtQuick.Window 2.2
 import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.1
+import QtQuick.Enterprise.Controls 1.1
 import "qrc:/../js/Swedish.js" as Swedish
 import "qrc:/../js/English.js" as English
 import "qrc:/../js/Espana.js" as Espana
@@ -12,10 +13,12 @@ import "qrc:/"
 
 ApplicationWindow {
     id: globals
-    height: 1080
-    width: 1000
+
+    height: contentItem.maximumHeight
+    width: contentItem.maximumWidth
     color: "green"
     visible: true
+
     signal clickedJob()
     property var mainScreen
     property int attr_margin: 100
@@ -378,18 +381,11 @@ ApplicationWindow {
         //        height: parent.height/10
         source: "qrc:/../images/small_logo.png"
     }
-    Item {
 
-        //      width: 200; height: 200
-        //       Loader {
-        //           id: pageLoader
-        //           source: "TimeLordOne.qml"
-        //       }
-    }
     UniversalButton {
         id: buttonJob
-        x: 130
-        y: 341
+        x: 508
+        y: 913
         width: 200
         height: 100
         text: qsTr("Job ")
@@ -521,8 +517,11 @@ ApplicationWindow {
     }
 
     UniversalButton {
-        id: universalButton3
+        id: buttonEspana
         x: 360
         y: 923
+        text: "Espana"
+        attr_gradient_top: "#424242"
+
     }
 }

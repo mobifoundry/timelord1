@@ -365,12 +365,16 @@ qrc_qml.cpp: ..\TimeLord1\qml.qrc \
 		..\TimeLord1\Globals.qml \
 		..\TimeLord1\KeyboardDigit.qml \
 		..\TimeLord1\LineEdit.qml \
+		..\TimeLord1\KeyboardButton.qml \
 		..\TimeLord1\MainView.qml \
 		..\TimeLord1\TimeLordOne.qml \
 		..\TimeLord1\Keyboard.qml \
 		..\TimeLord1\UniversalButton.qml \
 		..\TimeLord1\MainViewScreen.qml \
 		..\TimeLord1\main.qml \
+		..\images\checkmark.png \
+		..\images\backspace.png \
+		..\images\keyboard.png \
 		..\images\small_logo.png \
 		..\js\Finnish.js \
 		..\js\MainView.js \
