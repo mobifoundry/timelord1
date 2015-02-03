@@ -26,124 +26,124 @@
 
 //--------------------------------------------------------------------------------------// 
 
-function Finnish(){
-    uiManager.showNotification(3000, 
-	                           "info", TimeLord + " <br> " + LBL013SW  +
-                               VERSION.fontcolor("Green") +
-                               LBL005SW +
-                               author.fontcolor("Grey") +
-                               "<br> &copy 2009,2010" +
-                               company.fontcolor("Blue"));		
- WARN001FN = WARN001  = " Työntekijän nimi tai numero"; //Employee name or number ";  
+function setFinnish(){
+ //   uiManager.showNotification(3000,
+//	                           "info", TimeLord + " <br> " + lbl013SW  +
+ //                              VERSION.fontcolor("Green") +
+//                               lbl005SW +
+//                               author.fontcolor("Grey") +
+//                               "<br> &copy 2009,2010" +
+//                               company.fontcolor("Blue"));
+ warn001FN = warn001  = " Työntekijän nimi tai numero"; //Employee name or number ";
 
- WARN002FN = WARN002  = " Anna työn numero"; // Please enter Job ";  
+ warn002FN = warn002  = " Anna työn numero"; // Please enter Job ";
  
- WARN003FN = WARN003  = " Työ alkaa"; //Clock In"; 
+ warn003FN = warn003  = " Työ alkaa"; //Clock In";
 
- WARN004FN = WARN004  = " Syötä työ luodaksesi listan"; //Enter Job task to create a punch down list"; 
-
-
- WARN005FN = WARN005  = "Uusi työn kuvaus tai olemassa oleva numero"; //New Job name or existing number "; 
-
-WARN006FN = WARN006  = "Syötä materiaali"; //Please enter your Material!"; 
-
- 
- WARN007FN = WARN007  = "Syötä hinta"; //Please enter the Price!"; 
- WARN008FN = WARN008  = "Menun tyhjentäminen epäonnistui"; //clear menu failed";  
+ warn004FN = warn004  = " Syötä työ luodaksesi listan"; //Enter Job task to create a punch down list";
 
 
- WARN009FN = WARN009  = "Syötä työn kuvaus"; //enter Job task to complete";  
+ warn005FN = warn005  = "Uusi työn kuvaus tai olemassa oleva numero"; //New Job name or existing number ";
 
- LBL001FN = LBL001   = " Positively Front Street, Inc © 2009,2010 ";
-
- LBL002FN = LBL002   = " Syötä ensin työ, sitten tehtävät, työmäärä ja materiaalit"; //first enter a Job then Task, Labor and Materials "; 
-
- LBL003FN = LBL003   = "Syötä materiaali"; //Enter Material";  
- LBL004FN = LBL004   = "den anställdas namn eller nummer,  Työntekijän nimi tai numero"; //employee name or number"; 
-
- LBL005FN = LBL005   = " Tekijä"; //Written By"; 
-
- LBL006FN = LBL006   = " Aikalista"; //TimeSheet "; 
-
- LBL007FN = LBL007   = "materiaalilasku"; // Bill of Materials: $"; 
- LBL008FN = LBL008   = "Materiaalin nimi tai numero"; // Materials name or number"; 
-
- LBL009FN = LBL009   = " Aika alkoi!"; // Clocked in!"; 
-
- LBL010FN = LBL010   = "Syötä määrä"; //Enter Quantity"; 
-
- LBL011FN = LBL011   = " versio"; // Version "; 
-
- LBL012FN = LBL012   = "Työ"; // Job:"; 
-
- LBL013FN = LBL013   = "Versio "; // Verison ";  
-
- LBL014FN = LBL014   = " Määrä"; // Quantity"; 
-
- LBL015FN = LBL015   = "Hinta"; // Price"; 
-
- LBL016FN = LBL016   = "ostohinta tai jos varastossa syötä nolla"; //Purchase Price or zero if stock"; 
-
- LBL017FN = LBL017   = "Yksikköhinta"; // Enter Price per unit"; 
- LBL018FN = LBL018   = "Lisää tehtävä"; // Add task"; 
-
- LBL019FN = LBL019   = "Suorita tehtävä"; // Complete task"; 
- LBL020FN = LBL020   = "Työtehtävä"; // Job Task"; 
-
- LBL021FN = LBL021   = " Tehtävälista"; // Task List"; 
+warn006FN = warn006  = "Syötä materiaali"; //Please enter your Material!";
 
  
- LBL022FN = LBL022   = "Menun tyhjentäminen epäonnistui"; //clear menu failed"; 
+ warn007FN = warn007  = "Syötä hinta"; //Please enter the Price!";
+ warn008FN = warn008  = "Menun tyhjentäminen epäonnistui"; //clear menu failed";
 
- LBL023FN = LBL023   = " Tehty"; // complete"; 
 
- LBL024FN = LBL024   = " Saapunut työpaikalle"; // 1st on site "; 
+ warn009FN = warn009  = "Syötä työn kuvaus"; //enter Job task to complete";
+
+ lbl001FN = lbl001   = " Positively Front Street, Inc © 2009,2010 ";
+
+ lbl002FN = lbl002   = " Syötä ensin työ, sitten tehtävät, työmäärä ja materiaalit"; //first enter a Job then Task, Labor and Materials ";
+
+ lbl003FN = lbl003   = "Syötä materiaali"; //Enter Material";
+ lbl004FN = lbl004   = "den anställdas namn eller nummer,  Työntekijän nimi tai numero"; //employee name or number";
+
+ lbl005FN = lbl005   = " Tekijä"; //Written By";
+
+ lbl006FN = lbl006   = " Aikalista"; //TimeSheet ";
+
+ lbl007FN = lbl007   = "materiaalilasku"; // Bill of Materials: $";
+ lbl008FN = lbl008   = "Materiaalin nimi tai numero"; // Materials name or number";
+
+ lbl009FN = lbl009   = " Aika alkoi!"; // Clocked in!";
+
+ lbl010FN = lbl010   = "Syötä määrä"; //Enter Quantity";
+
+ lbl011FN = lbl011   = " versio"; // Version ";
+
+ lbl012FN = lbl012   = "Työ"; // Job:";
+
+ lbl013FN = lbl013   = "Versio "; // Verison ";
+
+ lbl014FN = lbl014   = " Määrä"; // Quantity";
+
+ lbl015FN = lbl015   = "Hinta"; // Price";
+
+ lbl016FN = lbl016   = "ostohinta tai jos varastossa syötä nolla"; //Purchase Price or zero if stock";
+
+ lbl017FN = lbl017   = "Yksikköhinta"; // Enter Price per unit";
+ lbl018FN = lbl018   = "Lisää tehtävä"; // Add task";
+
+ lbl019FN = lbl019   = "Suorita tehtävä"; // Complete task";
+ lbl020FN = lbl020   = "Työtehtävä"; // Job Task";
+
+ lbl021FN = lbl021   = " Tehtävälista"; // Task List";
 
  
- LBL025FN = LBL025   = " Työryhmän jäsenet"; //on crew "; 
+ lbl022FN = lbl022   = "Menun tyhjentäminen epäonnistui"; //clear menu failed";
 
- LBL026FN = LBL026   = " Tunteja"; // Hours "; 
+ lbl023FN = lbl023   = " Tehty"; // complete";
 
- LBL027FN = LBL027   = " Avoimet työt"; // Active Jobs"; 
+ lbl024FN = lbl024   = " Saapunut työpaikalle"; // 1st on site ";
 
-  LBL028FN = LBL028   = " Uusi työ"; // New Job: ";  
+ 
+ lbl025FN = lbl025   = " Työryhmän jäsenet"; //on crew ";
 
- LBL029FN = LBL029   = " Olemassa oleva työ"; // Existing Job:  "; 
+ lbl026FN = lbl026   = " Tunteja"; // Hours ";
+
+ lbl027FN = lbl027   = " Avoimet työt"; // Active Jobs";
+
+  lbl028FN = lbl028   = " Uusi työ"; // New Job: ";
+
+ lbl029FN = lbl029   = " Olemassa oleva työ"; // Existing Job:  ";
 
 
- JobButtonTextFN = JobButtonText = "Työ"; // Job"; 
+ jobButtonTextFN = jobButtonText = "Työ"; // Job";
 
- MaterialsButtonTextFN = MaterialsButtonText = "Materiaalit"; // Materials"; 
+ materialsButtonTextFN = materialsButtonText = "Materiaalit"; // Materials";
 
   taskButtontextFN = taskButtontext = "Tehtävälista"; // Task List"; 
 
  
- LaborButtonTextFN =  LaborButtonText = "Työmäärä"; // Labor"; 
+ laborButtonTextFN =  laborButtonText = "Työmäärä"; // Labor";
 
  cinButtonTextFN =  cinButtonText = "Työt aloitettiin"; // Clock In"; 
 
  coButtonTextFN =  coButtonText = "Työt lopetettiin"; // Clock Out"; 
 
- menulblaboutFN =  menulblabout = "Tiedot"; // About"; 
+ menulblaboutFN =  menulblabout = "Tiedot"; // About";
 
- menulblmainFN  =  menulblmain  = "Päämenu"; // Main"; 
+ menulblmainFN  =  menulblmain  = "Päämenu"; // Main";
 
- menulbljobFN   =  menulbljob   = "Työ"; // Job"; 
+ menulbljobFN   =  menulbljob   = "Työ"; // Job";
 
- menulbllaborFN =  menulbllabor = "Työmäärä"; // Labor"; 
+ menulbllaborFN =  menulbllabor = "Työmäärä"; // Labor";
 
- menulblmaterialsFN =  menulblmaterials = "Materiaalit"; // Materials"; 
+ menulblmaterialsFN =  menulblmaterials = "Materiaalit"; // Materials";
 
- menulblcursorFN =  menulblcursor = "Hiirimoodi"; // Cursor mode"; 
+ menulblcursorFN =  menulblcursor = "Hiirimoodi"; // Cursor mode";
 
- menulbltabFN = menulbltab ="Tabulaattorimoodi"; // Tab mode"; 
+ menulbltabFN = menulbltab ="Tabulaattorimoodi"; // Tab mode";
 
- viewlblmainFN =  viewlblmain = "Päänäkymä"; //MainView"; 
+ viewlblmainFN =  viewlblmain = "Päänäkymä"; //MainView";
 
- viewlbllaborFN =  viewlbllabor = "Työmääränäkymä"; // LaborView"; 
+ viewlbllaborFN =  viewlbllabor = "Työmääränäkymä"; // LaborView";
 
- viewlbljobFN =  viewlbljob = "Työnäkymä"; // JobView"; 
+ viewlbljobFN =  viewlbljob = "Työnäkymä"; // JobView";
 
- viewlbltaskFN =  viewlbltask = "Tehtävänäkymä"; // TaskView"; 
+ viewlbltaskFN =  viewlbltask = "Tehtävänäkymä"; // TaskView";
 
 } 

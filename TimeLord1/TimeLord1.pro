@@ -1,7 +1,7 @@
 TEMPLATE = app
 
 QT += qml quick
-
+# CONFIG += qtquickcompiler
 SOURCES += main.cpp
 
 RESOURCES += qml.qrc

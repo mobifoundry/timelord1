@@ -1,0 +1,36 @@
+module Qt.Quick.Controls.Styles.Flat
+singleton FlatStyle 1.0 FlatStyle.qml
+ApplicationWindowStyle 1.0 ApplicationWindowStyle.qml
+BusyIndicatorStyle 1.0 BusyIndicatorStyle.qml
+ButtonStyle 1.0 ButtonStyle.qml
+CalendarStyle 1.0 CalendarStyle.qml
+CheckBoxStyle 1.0 CheckBoxStyle.qml
+CircularButtonStyle 1.0 CircularButtonStyle.qml
+CircularGaugeStyle 1.0 CircularGaugeStyle.qml
+ComboBoxStyle 1.0 ComboBoxStyle.qml
+CursorHandleStyle 1.0 CursorHandleStyle.qml
+DelayButtonStyle 1.0 DelayButtonStyle.qml
+DialStyle 1.0 DialStyle.qml
+FocusFrameStyle 1.0 FocusFrameStyle.qml
+GaugeStyle 1.0 GaugeStyle.qml
+GroupBoxStyle 1.0 GroupBoxStyle.qml
+MenuBarStyle 1.0 MenuBarStyle.qml
+MenuStyle 1.0 MenuStyle.qml
+PieMenuStyle 1.0 PieMenuStyle.qml
+ProgressBarStyle 1.0 ProgressBarStyle.qml
+RadioButtonStyle 1.0 RadioButtonStyle.qml
+ScrollViewStyle 1.0 ScrollViewStyle.qml
+SelectionHandleStyle 1.0 SelectionHandleStyle.qml
+SliderStyle 1.0 SliderStyle.qml
+SpinBoxStyle 1.0 SpinBoxStyle.qml
+StatusBarStyle 1.0 StatusBarStyle.qml
+StatusIndicatorStyle 1.0 StatusIndicatorStyle.qml
+SwitchStyle 1.0 SwitchStyle.qml
+TabViewStyle 1.0 TabViewStyle.qml
+TableViewStyle 1.0 TableViewStyle.qml
+TextAreaStyle 1.0 TextAreaStyle.qml
+TextFieldStyle 1.0 TextFieldStyle.qml
+ToggleButtonStyle 1.0 ToggleButtonStyle.qml
+ToolBarStyle 1.0 ToolBarStyle.qml
+ToolButtonStyle 1.0 ToolButtonStyle.qml
+TumblerStyle 1.0 TumblerStyle.qml

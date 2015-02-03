@@ -105,15 +105,29 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_qml.cpp
 release/qrc_qml.cpp: ../TimeLord1/qml.qrc \
 		../TimeLord1/MainForm.ui.qml \
+		../TimeLord1/Globals.qml \
+		../TimeLord1/KeyboardDigit.qml \
+		../TimeLord1/LineEdit.qml \
+		../TimeLord1/KeyboardButton.qml \
+		../TimeLord1/MainView.qml \
 		../TimeLord1/TimeLordOne.qml \
+		../TimeLord1/Keyboard.qml \
+		../TimeLord1/UniversalButton.qml \
 		../TimeLord1/MainViewScreen.qml \
 		../TimeLord1/main.qml \
+		../images/checkmark.png \
+		../images/backspace.png \
+		../images/keyboard.png \
 		../images/small_logo.png \
+		../js/Finnish.js \
 		../js/MainView.js \
 		../js/MainMenu.js \
+		../js/AboutView.js \
 		../js/Tone.js \
+		../js/Espana.js \
 		../js/English.js \
-		../js/var.js
+		../js/var.js \
+		../js/Swedish.js
 	C:\Qt\5.4\mingw491_32\bin\rcc.exe -name qml ..\TimeLord1\qml.qrc -o release\qrc_qml.cpp
 
 compiler_moc_header_make_all:

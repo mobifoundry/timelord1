@@ -45,7 +45,7 @@
 // 30JAN15 LPM conversion to QML/js
 function mainView() {
 
-  tone();
+  //tone();
   if (mainView == null)  {
     window.menu.setRightSoftkeyLabel("Enter", JobsButtonClicked ); 	
   	mainView = new ListView(MENU_ITEM_MAIN, viewlblmain);
@@ -60,7 +60,7 @@ function mainView() {
     mainView.addControl(aboutPanel);		
     widget.setNavigationEnabled(false);
   }
-   Jobnum = Jobcount;   // point to next empty job number
+   globals.jobnum = globals.jobcount;   // point to next empty job number
     // show the main view
 
 }

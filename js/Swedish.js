@@ -34,81 +34,80 @@
 //
 //--------------------------------------------------------------------------------------// 
 
-function Swedish()	{
-    uiManager.showNotification(3000,"info", TimeLord + " <br> " + LBL013SW  + VERSION.fontcolor("Green") + LBL005SW +
-                               author.fontcolor("Grey") + "<br> &copy 2010" + company.fontcolor("Blue"));	
+function setSwedish()	{
+//    uiManager.showNotification(3000,"info", TimeLord + " <br> " + lbl013SW  + VERSION.fontcolor("Green") + lbl005SW +
+//                               author.fontcolor("Grey") + "<br> &copy 2010" + company.fontcolor("Blue"));
 							   	
-	WARN001 = WARN001SW; //  = "den anställdes namn eller nummer"; // " Employee name or number ";
-	WARN002 = WARN002SW; //  = "klicka på enter för arbetsuppgift"; //" Please enter Job ";
-	WARN003 = WARN003SW; //  = "stämpla in"; //" Clock In"; 
-	WARN004 = WARN004SW; //  = "klicka på enter för arbetsuppgift för att skapa lista"; //" Enter Job task to create a punch down list"; 
-	WARN005 = WARN005SW; //  = "nytt arbetsnummer eller existerande nummer"; // "New Job name or existing number "; 
-	WARN006 = WARN006SW; //  = "klicka på enter för ert material"; // "Please enter your Material!"; 
-	WARN007 = WARN007SW; //  = "klicka på enter för priset";       // "Please enter the Price!"; 
-	WARN008 = WARN008SW; //  = "menytömningen misslyckades"; // "clear menu failed";  
-	WARN009 = WARN009SW; //  = "klicka på enter för att avsluta arbetsuppgiften"; // "enter Job task to complete";  
+    warn001 = warn001SW; //  = "den anställdes namn eller nummer"; // " Employee name or number ";
+    warn002 = warn002SW; //  = "klicka på enter för arbetsuppgift"; //" Please enter Job ";
+    warn003 = warn003SW; //  = "stämpla in"; //" Clock In";
+    warn004 = warn004SW; //  = "klicka på enter för arbetsuppgift för att skapa lista"; //" Enter Job task to create a punch down list";
+    warn005 = warn005SW; //  = "nytt arbetsnummer eller existerande nummer"; // "New Job name or existing number ";
+    warn006 = warn006SW; //  = "klicka på enter för ert material"; // "Please enter your Material!";
+    warn007 = warn007SW; //  = "klicka på enter för priset";       // "Please enter the Price!";
+    warn008 = warn008SW; //  = "menytömningen misslyckades"; // "clear menu failed";
+    warn009 = warn009SW; //  = "klicka på enter för att avsluta arbetsuppgiften"; // "enter Job task to complete";
 
-	LBL001 = LBL001SW; //   = " Positively Front Street, Inc DBA mobiFoundry &copy 2009,2010 ";
-	LBL002 = LBL002SW; //   = "<br>klicka först på enter för jobb, sedan uppgift, arbetskraft och material"; //"<br/>first enter a Job then Task, Labor and Materials "; 
-	LBL003 = LBL003SW; //  = "klicka på enter för material"; // "Enter Material";  
-	LBL004 = LBL004SW; //    = "den anställdes namn eller nummer"; //"employee name or number"; 
-	LBL005 = LBL005SW; //   = "<br>skrivet av"; // "<br> Written By"; 
-	LBL006 = LBL006SW; //   = "tidsschema"; // " TimeSheet "; 
-	LBL007 = LBL007SW; //   = "materialräkning"; // "Bill of Materials: $"; 
-	LBL008 = LBL008SW; //   = "materialets namn eller nummer"; // "Materials name or number"; 
-	LBL009 = LBL009SW; //   = "stämplat in"; //" Clocked in!"; 
+    lbl001 = lbl001SW; //   = " Positively Front Street, Inc DBA mobiFoundry &copy 2009,2010 ";
+    lbl002 = lbl002SW; //   = "<br>klicka först på enter för jobb, sedan uppgift, arbetskraft och material"; //"<br/>first enter a Job then Task, Labor and Materials ";
+    lbl003 = lbl003SW; //  = "klicka på enter för material"; // "Enter Material";
+    lbl004 = lbl004SW; //    = "den anställdes namn eller nummer"; //"employee name or number";
+    lbl005 = lbl005SW; //   = "<br>skrivet av"; // "<br> Written By";
+    lbl006 = lbl006SW; //   = "tidsschema"; // " TimeSheet ";
+    lbl007 = lbl007SW; //   = "materialräkning"; // "Bill of Materials: $";
+    lbl008 = lbl008SW; //   = "materialets namn eller nummer"; // "Materials name or number";
+    lbl009 = lbl009SW; //   = "stämplat in"; //" Clocked in!";
 
-	LBL010 = LBL010SW; //   = "klicka på enter för kvantitet"; // "Enter Quantity"; 
-	LBL011 = LBL011SW; //   = " Version "; 
-	LBL012 = LBL012SW; //   = "jobb";  // "Job:"; 
-	LBL013 = LBL013SW; //   = "Verison ";  
-	LBL014 = LBL014SW; //   = "kvantitet"; // " Quantity";
-	LBL015 = LBL015SW; //   = "pris"; //"Price"; 
-	LBL016 = LBL016SW; //   = "inköpspris eller noll om i lager"; // "Purchase Price or zero if stock"; 
-	LBL017 = LBL017SW; //   = "klicka på enter för pris per enhet"; //"Enter Price per unit"; 
-	LBL018 = LBL018SW; //   = "lägg till uppgift"; //"Add task"; 
-	LBL019 = LBL019SW; //   = "avsluta uppgift"; //"Complete task"; 
+    lbl010 = lbl010SW; //   = "klicka på enter för kvantitet"; // "Enter Quantity";
+    lbl011 = lbl011SW; //   = " Version ";
+    lbl012 = lbl012SW; //   = "jobb";  // "Job:";
+    lbl013 = lbl013SW; //   = "Verison ";
+    lbl014 = lbl014SW; //   = "kvantitet"; // " Quantity";
+    lbl015 = lbl015SW; //   = "pris"; //"Price";
+    lbl016 = lbl016SW; //   = "inköpspris eller noll om i lager"; // "Purchase Price or zero if stock";
+    lbl017 = lbl017SW; //   = "klicka på enter för pris per enhet"; //"Enter Price per unit";
+    lbl018 = lbl018SW; //   = "lägg till uppgift"; //"Add task";
+    lbl019 = lbl019SW; //   = "avsluta uppgift"; //"Complete task";
 
-	LBL020 = LBL020SW; //   = "arbetsuppgift";  // "Job Task"; 
-	LBL021 = LBL021SW; //   = "lista på uppgifter"; //" Task List"; 
-	LBL022 = LBL022SW; //   = "menytömningen misslyckades"; // "clear menu failed"; 
-	LBL023 = LBL023SW; //   = "avsluta"; // " complete"; 
-	LBL024 = LBL024SW; //   = "först på arbetsplatsen"; // " 1st on site "; 
-	LBL025 = LBL025SW; //   = "i arbetsstyrkan"; // " on crew "; 
-	LBL026 = LBL026SW; //   = "timmar"; // " Hours "; 
-	LBL027 = LBL027SW; //  = "aktivt arbete, aktiva arbeten, aktiva jobb"; // " Active Jobs"; 
-	LBL028 = LBL028SW; //  = "nytt jobb"; // " New Job: ";  
-	LBL029 = LBL029SW; //   = "existerande arbete"; // " Existing Job:  "; 
+    lbl020 = lbl020SW; //   = "arbetsuppgift";  // "Job Task";
+    lbl021 = lbl021SW; //   = "lista på uppgifter"; //" Task List";
+    lbl022 = lbl022SW; //   = "menytömningen misslyckades"; // "clear menu failed";
+    lbl023 = lbl023SW; //   = "avsluta"; // " complete";
+    lbl024 = lbl024SW; //   = "först på arbetsplatsen"; // " 1st on site ";
+    lbl025 = lbl025SW; //   = "i arbetsstyrkan"; // " on crew ";
+    lbl026 = lbl026SW; //   = "timmar"; // " Hours ";
+    lbl027 = lbl027SW; //  = "aktivt arbete, aktiva arbeten, aktiva jobb"; // " Active Jobs";
+    lbl028 = lbl028SW; //  = "nytt jobb"; // " New Job: ";
+    lbl029 = lbl029SW; //   = "existerande arbete"; // " Existing Job:  ";
 	
-	JobButtonText       = JobButtonTextSW; // = "jobb"; //"Job"; 
-	MaterialsButtonText = MaterialsButtonTextSW; // = "Materials"; 
+    jobButtonText       = jobButtonTextSW; // = "jobb"; //"Job";
+    materialsButtonText = materialsButtonTextSW; // = "Materials";
 	taskButtontext      = taskButtontextSW; // = "lista på arbetsuppgifter";  // "Task List"; 
-	LaborButtonText     = LaborButtonTextSW; // = "arbetskraft"; // "Labor"; 
+    laborButtonText     = laborButtonTextSW; // = "arbetskraft"; // "Labor";
 	cinButtonText       = cinButtonTextSW;// = "stämpla in"; // "Clock In"; 
 	coButtonText        = coButtonTextSW; // = "stämpla ut"; //"Clock Out"; 
 
-	menulblabout     = menulblaboutSW; // = "information"; // "About"; 
-	menulblmain      = menulblmainSW; //  = "hem"; //"Main"; 
-	menulbljob       = menulbljobSW; //   = "jobb"; // "Job"; 
-	menulbllabor     = menulbllaborSW; // = "arbetskraft"; //"Labor"; 
-	menulblmaterials = menulblmaterialsSW; // = "Materials"; 
-	menulblcursor    = menulblcursorSW; // = "kursor läge"; //"Cursor mode"; 
-	menulbltab       = menulbltabSW; // ="tabulator läge"; //"Tab mode"; 
+    menulblabout     = menulblaboutSW; // = "information"; // "About";
+    menulblmain      = menulblmainSW; //  = "hem"; //"Main";
+    menulbljob       = menulbljobSW; //   = "jobb"; // "Job";
+    menulbllabor     = menulbllaborSW; // = "arbetskraft"; //"Labor";
+    menulblmaterials = menulblmaterialsSW; // = "Materials";
+    menulblcursor    = menulblcursorSW; // = "kursor läge"; //"Cursor mode";
+    menulbltab       = menulbltabSW; // ="tabulator läge"; //"Tab mode";
 
-	viewlblmain  = viewlblmainSW; // = "översikt"; //"MainView"; 
-	viewlbllabor = viewlbllaborSW; // = "arbetskraftsöversikt"; //"LaborView"; 
-	viewlbljob   = viewlbljobSW; // = "jobböversikt"; //"JobView"; 
-	viewlbltask  = viewlbltaskSW; // = "uppgiftsöversikt"; //"TaskView"; 
+    viewlblmain  = viewlblmainSW; // = "översikt"; //"MainView";
+    viewlbllabor = viewlbllaborSW; // = "arbetskraftsöversikt"; //"LaborView";
+    viewlbljob   = viewlbljobSW; // = "jobböversikt"; //"JobView";
+    viewlbltask  = viewlbltaskSW; // = "uppgiftsöversikt"; //"TaskView";
 	
-	aboutMenuItem      = new MenuItem(menulblabout, MENU_ITEM_ABOUT);
-	mainMenuItem       = new MenuItem(menulblmain , MENU_ITEM_MAIN);
-	JobMenuItem        = new MenuItem(menulbljob, MENU_ITEM_JOB);
-	LaborMenuItem      = new MenuItem(menulbllabor, MENU_ITEM_LABOR);
-	MaterialsMenuItem  = new MenuItem(menulblmaterials, MENU_ITEM_MATERIALS);
-	cursorModeMenuItem = new MenuItem(menulblcursor, CMD_CURSOR_MODE);
-	tabModeMenuItem    = new MenuItem(menulbltab, CMD_TAB_MODE);
+    //aboutMenuItem      = new MenuItem(menulblabout, MENU_ITEM_ABOUT);
+   // mainMenuItem       = new MenuItem(menulblmain , MENU_ITEM_MAIN);
+   // jobMenuItem        = new MenuItem(menulbljob, MENU_ITEM_JOB);
+   // laborMenuItem      = new MenuItem(menulbllabor, MENU_ITEM_LABOR);
+   // materialsMenuItem  = new MenuItem(menulblmaterials, MENU_ITEM_MATERIALS);
+  //  cursorModeMenuItem = new MenuItem(menulblcursor, CMD_CURSOR_MODE);
+  //  tabModeMenuItem    = new MenuItem(menulbltab, CMD_TAB_MODE);
 
-	MainView();
-		
+
 }
 	

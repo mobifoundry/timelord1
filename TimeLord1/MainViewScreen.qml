@@ -8,58 +8,8 @@ import QtQuick.LocalStorage 2.0
 import QtQuick.Particles 2.0
 import QtQuick.Window 2.0
 import QtQuick.XmlListModel 2.0
-import "qrc:/../js/English.js" as Vars
-import "qrc:/../js/English.js" as English
-import "qrc:/../js/MainView.js" as MainView
-import "qrc:/../js/MainMenu.js" as MainMenu
 
 Rectangle {
     width: 1920
     height: 1200
-
-    Button {
-        id: button1
-
-        x: 860
-        y: 376
-        width: 200
-        height: 100
-        text: qsTr("English")
-        MouseArea{
-            anchors.fill: parent
-            onClicked:{
-               English.setEnglish();
-               MainMenu.mainMenu();  // populate right and left menu keys
-               MainView.mainView();
-            }
-        }
-
-    }
-
-    Button {
-        id: button2
-        x: 860
-        y: 507
-        width: 200
-        height: 100
-        text: qsTr("Espanol")
-    }
-
-    Button {
-        id: button3
-        x: 860
-        y: 640
-        width: 200
-        height: 100
-        text: qsTr("Finnish")
-    }
-
-    Button {
-        id: button4
-        x: 860
-        y: 777
-        width: 200
-        height: 100
-        text: qsTr("Swedish")
-    }
 }

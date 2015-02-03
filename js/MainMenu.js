@@ -51,18 +51,18 @@ function mainMenu(){
     
     // Tab mode is the default so let's add cursor mode item to the main menu
 	
-    menu.append(aboutMenuItem);
-    menu.append(mainMenuItem);
-    menu.append(cursorModeMenuItem);	
-    menu.append(tabModeMenuItem);
-	menu.append(EspanaMenuItem);
-	menu.append(EnglishMenuItem);
-	menu.append(SwedishMenuItem);
-	menu.append(FinnishMenuItem);
+    //menu.append(aboutMenuItem);
+   // menu.append(mainMenuItem);
+   // menu.append(cursorModeMenuItem);
+   // menu.append(tabModeMenuItem);
+    //menu.append(EspanaMenuItem);
+    //menu.append(EnglishMenuItem);
+    //menu.append(SwedishMenuItem);
+//	menu.append(FinnishMenuItem);
 	
 	    // set right softkey to "exit"
-    if (window.widget) {
-        menu.setRightSoftkeyLabel("", null);
-    }
+ //   if (window.widget) {
+ //       menu.setRightSoftkeyLabel("", null);
+ //   }
 	
 }
