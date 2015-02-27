@@ -13,7 +13,18 @@ SOURCES += main.cpp \
     abstractcontextapi.cpp \
     profitapimethods.cpp \
     abstractapimethod.cpp \
-    restclient.cpp
+    restclient.cpp \
+    parser.cpp \
+    presssheet.cpp \
+    presssheettemplate.cpp \
+    presssheetitem.cpp \
+    orderitem.cpp \
+    jdffileinfo.cpp \
+    shwsapi.cpp \
+    shwsapimethods.cpp \
+    profitapimockdata.cpp \
+    profitapifile.cpp \
+    shwsapimockdata.cpp
 
 RESOURCES += qml.qrc
 
@@ -38,4 +49,15 @@ HEADERS += \
     abstractcontextapi.h \
     profitapimethods.h \
     abstractapimethod.h \
-    restclient.h
+    restclient.h \
+    parser.h \
+    presssheet.h \
+    presssheettemplate.h \
+    presssheetitem.h \
+    orderitem.h \
+    jdffileinfo.h \
+    shwsapi.h \
+    shwsapimethods.h \
+    profitapimockdata.h \
+    profitapifile.h \
+    shwsapimockdata.h

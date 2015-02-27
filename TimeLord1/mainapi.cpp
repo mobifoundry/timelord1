@@ -89,25 +89,25 @@ void::MainApi::logIn(QString userName, QString password)
         shwsApi = new ShwsApi(this);
     }
 
-    connect(profitApi, &ProfitApi::sendAuthentificationStatus, this, &MainApi::authentificate);
-    connect(profitApi, &ProfitApi::statusErrorQuery, this, &MainApi::statusError);
+//    connect(profitApi, &ProfitApi::sendAuthentificationStatus, this, &MainApi::authentificate);
+//    connect(profitApi, &ProfitApi::statusErrorQuery, this, &MainApi::statusError);
     connect(profitApi, &ProfitApi::sendPressSheetTemplateToShws, shwsApi, &ShwsApi::queryCreateCuttingCourse);
-    connect(shwsApi, &ShwsApi::statusErrorQuery, this, &MainApi::statusError);
+//    connect(shwsApi, &ShwsApi::statusErrorQuery, this, &MainApi::statusError);
 
-    profitApi->setClientName(cnfgHolder->realName());
-    profitApi->setHost(cnfgHolder->hostProfit());
-    profitApi->setScheme(cnfgHolder->schemeProfit());
-    profitApi->setUserName(cnfgHolder->username());
-    profitApi->setPassword(cnfgHolder->password());
+//    profitApi->setClientName(cnfgHolder->realName());
+//    profitApi->setHost(cnfgHolder->hostProfit());
+//    profitApi->setScheme(cnfgHolder->schemeProfit());
+//    profitApi->setUserName(cnfgHolder->username());
+//    profitApi->setPassword(cnfgHolder->password());
     cntx->setContextProperty("ProfitApi",profitApi);
 
     cnfgHolder->setUsernameShws("DEVELOPER");//todo delete
     cnfgHolder->setPasswordShws("123456");//todo delete
 
-    shwsApi->setHost(cnfgHolder->hostShws());
-    shwsApi->setScheme(cnfgHolder->schemeShws());
-    shwsApi->setUserName(cnfgHolder->usernameShws());
-    shwsApi->setPassword(cnfgHolder->passwordShws());
+//    shwsApi->setHost(cnfgHolder->hostShws());
+//    shwsApi->setScheme(cnfgHolder->schemeShws());
+//    shwsApi->setUserName(cnfgHolder->usernameShws());
+//    shwsApi->setPassword(cnfgHolder->passwordShws());
     cntx->setContextProperty("ShwsApi",shwsApi);
 
     profitApi->queryAuthorization();//Should be the last

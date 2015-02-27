@@ -52,5 +52,6 @@ C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Debug\android-build\libs\armeabi-v7a\libQt5Quick.so \
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Debug\android-build\libs\armeabi-v7a\libQt5QuickParticles.so \
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Debug\android-build\libs\armeabi-v7a\libQt5Sql.so \
+C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Debug\android-build\libs\armeabi-v7a\libQt5Widgets.so \
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Debug\android-build\libs\armeabi-v7a\libQt5XmlPatterns.so \
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Debug\android-build\libs\armeabi-v7a\libTimeLord1.so \

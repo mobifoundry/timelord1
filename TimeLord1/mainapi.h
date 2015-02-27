@@ -9,13 +9,13 @@
 
 #include "profitapi.h"
 #include "cuttingcourse.h"
-//#include "shwsapi.h"
+#include "shwsapi.h"
 #include "configholder.h"
 #include "cuttingcoursedatabase.h"
 
-//#include "profitapimockdata.h"
-//#include "profitapifile.h"
-//#include "shwsapimockdata.h"
+#include "profitapimockdata.h"
+#include "profitapifile.h"
+#include "shwsapimockdata.h"
 
 #ifndef Q_OS_ANDROID
 #include "cutterapi.h"
@@ -55,13 +55,13 @@ public slots:
     void showNextStep();
 
 private:
- //   CuttingCourse *cc;
- //   QList<CuttingCourse*> ccs;
+   CuttingCourse *cc;
+    QList<CuttingCourse*> ccs;
     QQmlContext *cntx;
     ConfigHolder *cnfgHolder;
     CuttingCourseDatabase *ccDb;
- //   ProfitApi *profitApi;
- //   ShwsApi *shwsApi;
+   ProfitApi *profitApi;
+   ShwsApi *shwsApi;
 #ifndef Q_OS_ANDROID
     CutterApi *cutterApi;
 

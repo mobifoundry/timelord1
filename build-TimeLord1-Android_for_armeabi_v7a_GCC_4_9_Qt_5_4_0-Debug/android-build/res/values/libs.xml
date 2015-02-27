@@ -18,8 +18,9 @@
 <item>Qt5Network</item>
 <item>Qt5Qml</item>
 <item>Qt5Quick</item>
-<item>Qt5QuickParticles</item>
+<item>Qt5Widgets</item>
 <item>Qt5Sql</item>
+<item>Qt5QuickParticles</item>
 <item>Qt5QuickParticles</item>
 <item>Qt5XmlPatterns</item>
 
@@ -48,6 +49,7 @@
 <item>libplugins_qmltooling_libqmldbg_qtquick2.so:plugins/qmltooling/libqmldbg_qtquick2.so</item>
 <item>libplugins_qmltooling_libqmldbg_tcp.so:plugins/qmltooling/libqmldbg_tcp.so</item>
 <item>libplugins_scenegraph_libsoftwarecontext.so:plugins/scenegraph/libsoftwarecontext.so</item>
+<item>libplugins_sqldrivers_libqsqlite.so:plugins/sqldrivers/libqsqlite.so</item>
 <item>libqml_QtQuick.2_libqtquick2plugin.so:qml/QtQuick.2/libqtquick2plugin.so</item>
 <item>libqml_QtQuick_Controls_libqtquickcontrolsplugin.so:qml/QtQuick/Controls/libqtquickcontrolsplugin.so</item>
 <item>libqml_QtQuick_Controls_Styles_Android_libqtquickcontrolsandroidstyleplugin.so:qml/QtQuick/Controls/Styles/Android/libqtquickcontrolsandroidstyleplugin.so</item>
@@ -57,7 +59,6 @@
 <item>libqml_QtQuick_Dialogs_libdialogplugin.so:qml/QtQuick/Dialogs/libdialogplugin.so</item>
 <item>libqml_QtQuick_Dialogs_Private_libdialogsprivateplugin.so:qml/QtQuick/Dialogs/Private/libdialogsprivateplugin.so</item>
 <item>libqml_QtQuick_LocalStorage_libqmllocalstorageplugin.so:qml/QtQuick/LocalStorage/libqmllocalstorageplugin.so</item>
-<item>libplugins_sqldrivers_libqsqlite.so:plugins/sqldrivers/libqsqlite.so</item>
 <item>libqml_QtQuick_Particles.2_libparticlesplugin.so:qml/QtQuick/Particles.2/libparticlesplugin.so</item>
 <item>libqml_QtQuick_XmlListModel_libqmlxmllistmodelplugin.so:qml/QtQuick/XmlListModel/libqmlxmllistmodelplugin.so</item>
 <item>libqml_Qt_labs_folderlistmodel_libqmlfolderlistmodelplugin.so:qml/Qt/labs/folderlistmodel/libqmlfolderlistmodelplugin.so</item>
