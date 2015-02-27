@@ -24,5 +24,6 @@
         <file>../images/backspace.png</file>
         <file>../images/checkmark.png</file>
         <file>../images/keyboard.png</file>
+        <file>SettingsWindow.qml</file>
     </qresource>
 </RCC>

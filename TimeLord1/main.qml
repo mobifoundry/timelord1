@@ -393,7 +393,7 @@ ApplicationWindow {
         attr_gradient_bottom: "purple"
 
             onClicked: {
-                clickedRoot()
+                clickedJob()
                 MainMenu.mainMenu() // populate right and left menu keys
                 MainView.mainView()
                 mainScreen = Qt.createComponent("qrc:/MainView.qml")
@@ -424,11 +424,11 @@ ApplicationWindow {
         y: attr_margin + attr_fieldHeight + attr_span
         echoMode: TextInput.Password
         attr_background_text: "Password"
-        KeyNavigation.tab: usrName
+        KeyNavigation.tab: jobName
     }
 
     LineEdit {
-        id: usrName
+        id: jobName
         text: //"admin"
               "Job Name"//Todo Delete
         height: attr_fieldHeight

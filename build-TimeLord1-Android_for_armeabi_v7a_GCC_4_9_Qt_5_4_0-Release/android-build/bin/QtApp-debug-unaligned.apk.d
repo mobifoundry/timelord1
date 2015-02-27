@@ -8,6 +8,7 @@ C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Release\android-build\libs\armeabi-v7a\libgdbserver.so \
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Release\android-build\libs\armeabi-v7a\libgnustl_shared.so \
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Release\android-build\libs\armeabi-v7a\libplugins_bearer_libqandroidbearer.so \
+C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Release\android-build\libs\armeabi-v7a\libplugins_bearer_libqgenericbearer.so \
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Release\android-build\libs\armeabi-v7a\libplugins_generic_libqevdevkeyboardplugin.so \
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Release\android-build\libs\armeabi-v7a\libplugins_generic_libqevdevmouseplugin.so \
 C:\Users\lomeadow\Desktop\GitHub\timelord1\build-TimeLord1-Android_for_armeabi_v7a_GCC_4_9_Qt_5_4_0-Release\android-build\libs\armeabi-v7a\libplugins_generic_libqevdevtabletplugin.so \
