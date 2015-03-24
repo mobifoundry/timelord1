@@ -41,6 +41,7 @@
 // 29JAN10 LPM continued with finnish
 // 21AUG11 LPM bring function (){ together to find error TypeError: Result of expression near '...})()...' [undefined] is not a function.
 //--------------------------------------------------------------------------------------// 
+function createVars() {
 var uiManager             = null;
 var aboutView             = null;
 var LanguageView          = null;
@@ -139,14 +140,15 @@ var MENU_ESPANA                  = 12;
 var MENU_SWEDISH                 = 13;
 var MENU_FINNISH                 = 14;
 
-var aboutMenuItem      = new MenuItem(menulblabout, MENU_ITEM_ABOUT);
-var mainMenuItem       = new MenuItem(menulblmain , MENU_ITEM_MAIN);
-var JobMenuItem        = new MenuItem(menulbljob, MENU_ITEM_JOB);
-var LaborMenuItem      = new MenuItem(menulbllabor, MENU_ITEM_LABOR);
-var MaterialsMenuItem  = new MenuItem(menulblmaterials, MENU_ITEM_MATERIALS);
-var cursorModeMenuItem = new MenuItem(menulblcursor, CMD_CURSOR_MODE);
-var tabModeMenuItem    = new MenuItem(menulbltab, CMD_TAB_MODE);
-var EnglishMenuItem    = new MenuItem(menulblEnglish, MENU_ENGLISH);
-var EspanaMenuItem     = new MenuItem(menulblEspana, MENU_ESPANA);
-var SwedishMenuItem    = new MenuItem(menulblSwedish, MENU_SWEDISH);
-var FinnishMenuItem    = new MenuItem(menulblFinnish, MENU_FINNISH);
+var aboutMenuItem
+var mainMenuItem
+var JobMenuItem
+var LaborMenuItem
+var MaterialsMenuItem
+var cursorModeMenuItem
+var tabModeMenuItem
+var EnglishMenuItem
+var EspanaMenuItem
+var SwedishMenuItem
+var FinnishMenuItem
+}

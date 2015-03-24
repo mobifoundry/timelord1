@@ -8,7 +8,8 @@
 #include <QProcess>
 
 #ifndef Q_OS_ANDROID
-#include "QSerialPortInfo"
+#include <QtSerialPort/QSerialPort>
+#include <QtSerialPort/QSerialPortInfo>
 #endif
 
 class ConfigHolder : public QObject

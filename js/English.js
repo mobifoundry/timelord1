@@ -10,67 +10,67 @@
 //   30JAN14 converted js vars to qml property
 // */
 function setEnglish(){
-    globals.timeLord = " TimeLord1 ";
+   timeLord = " TimeLord1 ";
 
-    globals.warn001  = " Employee name or number ";
-    globals.warn002  = " Please enter Job ";
-    globals.warn003  = " Clock In";
-    globals.warn004  = " Enter Job task to create a punch down list";
-    globals.warn005  = "New Job name or existing number ";
-    globals.warn006  = "Please enter your Material!";
-    globals.warn007  = "Please enter the Price!";
-    globals.warn008  = "clear menu failed";
-    globals.warn009  = "enter Job task to complete";
+   warn001  = " Employee name or number ";
+   warn002  = " Please enter Job ";
+   warn003  = " Clock In";
+   warn004  = " Enter Job task to create a punch down list";
+   warn005  = "New Job name or existing number ";
+   warn006  = "Please enter your Material!";
+   warn007  = "Please enter the Price!";
+   warn008  = "clear menu failed";
+   warn009  = "enter Job task to complete";
 	
-    globals.lbl001   = " Positively Front Street, Inc &copy 2009 ";
-    globals.lbl002   = "<br/>first enter a Job then Task, Labor and Materials ";
-    globals.lbl003   = "Enter Material";
-    globals.lbl004   = "employee name or number";
-    globals.lbl005   = "<br> Written By";
-    globals.lbl006   = " TimeSheet ";
-    globals.lbl007   = "Bill of Materials: $";
-    globals.lbl008   = "Materials name or number";
-    globals.lbl009   = " Clocked in!";
-    globals.lbl010   = "Enter Quantity";
+   lbl001   = " Positively Front Street, Inc &copy 2009 ";
+   lbl002   = "<br/>first enter a Job then Task, Labor and Materials ";
+   lbl003   = "Enter Material";
+   lbl004   = "employee name or number";
+   lbl005   = "<br> Written By";
+   lbl006   = " TimeSheet ";
+   lbl007   = "Bill of Materials: $";
+   lbl008   = "Materials name or number";
+   lbl009   = " Clocked in!";
+   lbl010   = "Enter Quantity";
 
-    globals.lbl011   = " Version ";
-    globals.lbl012   = "Job:";
-    globals.lbl013   = "Verison ";
-    globals.lbl014   = " Quantity";
-    globals.lbl015   = "Price";
-    globals.lbl016   = "Purchase Price or zero if stock";
-    globals.lbl017   = "Enter Price per unit";
-    globals.lbl018   = "Add task";
-    globals.lbl019   = "Complete task";
+   lbl011   = " Version ";
+   lbl012   = "Job:";
+   lbl013   = "Verison ";
+   lbl014   = " Quantity";
+   lbl015   = "Price";
+   lbl016   = "Purchase Price or zero if stock";
+   lbl017   = "Enter Price per unit";
+   lbl018   = "Add task";
+   lbl019   = "Complete task";
 	
-    globals.lbl020   = "Job Task";
-    globals.lbl021   = " Task List";
-    globals.lbl022   = "clear menu failed";
-    globals.lbl023   = " complete";
-    globals.lbl024   = " 1st on site ";
-    globals.lbl025   = " on crew ";
-    globals.lbl026   = " Hours ";
-    globals.lbl027   = " Active Jobs";
-    globals.lbl028   = " New Job: ";
-    globals.lbl029   = " Existing Job:  ";
+   lbl020   = "Job Task";
+   lbl021   = " Task List";
+   lbl022   = "clear menu failed";
+   lbl023   = " complete";
+   lbl024   = " 1st on site ";
+   lbl025   = " on crew ";
+   lbl026   = " Hours ";
+   lbl027   = " Active Jobs";
+   lbl028   = " New Job: ";
+   lbl029   = " Existing Job:  ";
 	
-    globals.jobButtonText = "Job";
-    globals.materialsButtonText = "Materials";
-    globals.taskButtontext = "Task List";
-    globals.laborButtonText = "Labor";
-    globals.cinButtonText = "Clock In";
-    globals.coButtonText = "Clock Out";
+   jobButtonText = "Job";
+   materialsButtonText = "Materials";
+   taskButtontext = "Task List";
+   laborButtonText = "Labor";
+   cinButtonText = "Clock In";
+   coButtonText = "Clock Out";
 //    menuglobals.lblabout = "About";
   //  menuglobals.lblmain  = "Main";
     //globals.menuglobals.lbljob   = "Job";
     //globals.menuglobals.lbllabor = "Labor";
-   // globals.menuglobals.lblmaterials = "Materials";
-   // globals.menuglobals.lblcursor = "Cursor mode";
-   // globals.menuglobals.lbltab ="Tab mode";
-   // globals.viewglobals.lblmain = "MainView";
-  //  globals.viewglobals.lbllabor = "LaborView";
-  //  globals.viewglobals.lbljob = "JobView";
-  //  globals.viewglobals.lbltask = "TaskView";
+   //menuglobals.lblmaterials = "Materials";
+   //menuglobals.lblcursor = "Cursor mode";
+   //menuglobals.lbltab ="Tab mode";
+   //viewglobals.lblmain = "MainView";
+  // viewglobals.lbllabor = "LaborView";
+  // viewglobals.lbljob = "JobView";
+  // viewglobals.lbltask = "TaskView";
 
 
 	}

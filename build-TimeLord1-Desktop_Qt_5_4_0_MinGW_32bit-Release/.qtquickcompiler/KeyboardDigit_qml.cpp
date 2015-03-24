@@ -7,12 +7,20 @@
 #include <qqml.h>
 
 typedef QV4::ReturnedValue (*AOTFunction)(QV4::ExecutionContext*);
-#if QT_VERSION != 0x50400
-#error This file was generated with the QtQuick Compiler for Qt 5.4.0. It cannot
+#if QT_VERSION != 0x50401
+#error This file was generated with the QtQuick Compiler for Qt 5.4.1. It cannot
 #error be used with this version of Qt. Please re-generate it with the version of
 #error the compiler that came with your Qt.
 #endif
 namespace QtQuickCompilerGeneratedModule { namespace __KeyboardDigit_qml {
+static double hex2double(quint64 hex) {
+    union {
+        double dbl;
+        quint64 binary;
+    } binary2double;
+    binary2double.binary = hex;
+    return binary2double.dbl;
+}
 QV4::ReturnedValue jsfunction_0(QV4::ExecutionContext *context) // context scope
 {
     QV4::Scope scope(context);
@@ -36,6 +44,8 @@ double temp_double_11;
 // line 9
     context->d()->lineNumber = 9;
 temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[33]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef arg2(temps[0]);
         QV4::Value retval;
@@ -45,6 +55,8 @@ temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilatio
         temps[1] = retval;
     }
     temps[2] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[31]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef arg2(temps[2]);
         QV4::Value retval;
@@ -54,7 +66,7 @@ temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilatio
         temps[3] = retval;
     }
     temp_double_14 = (double)temps[3].toNumber();
-    temp_double_6 = (double)temp_double_14*(double)2;
+    temp_double_6 = (double)temp_double_14*(double)hex2double(0x4000000000000000 /* = 2 */);
     {
         QV4::ValueRef arg2(temps[1]);
         QV4::Value arg3Tmp;
@@ -67,6 +79,8 @@ temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilatio
         temps[4] = retval;
     }
     temps[5] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[33]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef arg2(temps[5]);
         QV4::Value retval;
@@ -76,7 +90,7 @@ temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilatio
         temps[6] = retval;
     }
     temp_double_16 = (double)temps[6].toNumber();
-    temp_double_11 = (double)temp_double_16*(double)2;
+    temp_double_11 = (double)temp_double_16*(double)hex2double(0x4000000000000000 /* = 2 */);
     {
         QV4::ValueRef arg2(temps[4]);
         QV4::Value arg3Tmp;
@@ -104,6 +118,8 @@ double temp_double_11;
 // line 10
     context->d()->lineNumber = 10;
 temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[33]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef arg2(temps[0]);
         QV4::Value retval;
@@ -113,6 +129,8 @@ temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilatio
         temps[1] = retval;
     }
     temps[2] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[31]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef arg2(temps[2]);
         QV4::Value retval;
@@ -122,7 +140,7 @@ temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilatio
         temps[3] = retval;
     }
     temp_double_14 = (double)temps[3].toNumber();
-    temp_double_6 = (double)temp_double_14*(double)2;
+    temp_double_6 = (double)temp_double_14*(double)hex2double(0x4000000000000000 /* = 2 */);
     {
         QV4::ValueRef arg2(temps[1]);
         QV4::Value arg3Tmp;
@@ -135,6 +153,8 @@ temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilatio
         temps[4] = retval;
     }
     temps[5] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[33]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef arg2(temps[5]);
         QV4::Value retval;
@@ -144,7 +164,7 @@ temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilatio
         temps[6] = retval;
     }
     temp_double_16 = (double)temps[6].toNumber();
-    temp_double_11 = (double)temp_double_16*(double)2;
+    temp_double_11 = (double)temp_double_16*(double)hex2double(0x4000000000000000 /* = 2 */);
     {
         QV4::ValueRef arg2(temps[4]);
         QV4::Value arg3Tmp;
@@ -178,6 +198,8 @@ QV4::Value *temps = scope.alloc(1);
 // line 41
     context->d()->lineNumber = 41;
 temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[58]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     return temps[0].asReturnedValue();
 
 }
@@ -200,6 +222,8 @@ QV4::Value *temps = scope.alloc(1);
 // line 48
     context->d()->lineNumber = 48;
 temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[12]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     return temps[0].asReturnedValue();
 
 }
@@ -222,6 +246,8 @@ QV4::Value *temps = scope.alloc(6);
 // line 74
     context->d()->lineNumber = 74;
 temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[59]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef left(temps[0]);
         QV4::Value rightTmp;
@@ -251,6 +277,8 @@ L2:
 // line 76
     context->d()->lineNumber = 76;
 temps[3] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[59]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef left(temps[3]);
         QV4::Value rightTmp;
@@ -276,7 +304,7 @@ L3:
     temps[5] = temps[4];
     goto L5;
 L4:
-    temps[5] = QV4::Encode(QV4::Encode::undefined()).val;
+    temps[5] = QV4::Primitive::undefinedValue();
 L5:
     temps[2] = temps[5];
 L6:
@@ -305,6 +333,8 @@ QV4::Value *temps = scope.alloc(4);
 // line 58
     context->d()->lineNumber = 58;
 temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[59]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef left(temps[0]);
         QV4::Value rightTmp;
@@ -316,6 +346,8 @@ temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilatio
     }
 L1:
     temps[1] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[14]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     temps[2] = temps[1];
     goto L3;
 L2:
@@ -350,6 +382,8 @@ QV4::Value *temps = scope.alloc(1);
 // line 54
     context->d()->lineNumber = 54;
 temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[58]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     return temps[0].asReturnedValue();
 
 }
@@ -372,6 +406,8 @@ QV4::Value *temps = scope.alloc(7);
 // line 67
     context->d()->lineNumber = 67;
 temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[59]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef left(temps[0]);
         QV4::Value rightTmp;
@@ -390,6 +426,8 @@ L2:
 // line 68
     context->d()->lineNumber = 68;
 temps[3] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[59]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     {
         QV4::ValueRef left(temps[3]);
         QV4::Value rightTmp;
@@ -437,6 +475,8 @@ QV4::Value *temps = scope.alloc(1);
 // line 64
     context->d()->lineNumber = 64;
 temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilationUnit->runtimeStrings[58]);
+    if (context->d()->engine->hasException)
+        return QV4::Encode::undefined();
     return temps[0].asReturnedValue();
 
 }
@@ -465,7 +505,7 @@ temps[0] = QV4::Runtime::getActivationProperty(context, context->d()->compilatio
 extern const unsigned char qmlData[] = {
 
 0x71,0x76,0x34,0x63,0x64,0x61,0x74,0x61,
-0x0,0x0,0x1,0x0,0xd4,0x1c,0x0,0x0,
+0x0,0x0,0x1,0x0,0xe4,0x1c,0x0,0x0,
 0x7,0x0,0x0,0x0,0x40,0x0,0x0,0x0,
 0x1c,0x14,0x0,0x0,0x11,0x0,0x0,0x0,
 0x60,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
@@ -1138,8 +1178,8 @@ extern const unsigned char qmlData[] = {
 0x34,0x1b,0x0,0x0,0x6c,0x1b,0x0,0x0,
 0x8c,0x1b,0x0,0x0,0xcc,0x1b,0x0,0x0,
 0xe4,0x1b,0x0,0x0,0xfc,0x1b,0x0,0x0,
-0x34,0x1c,0x0,0x0,0x6c,0x1c,0x0,0x0,
-0xac,0x1c,0x0,0x0,0x0,0x0,0x0,0x0,
+0x3c,0x1c,0x0,0x0,0x7c,0x1c,0x0,0x0,
+0xbc,0x1c,0x0,0x0,0x0,0x0,0x0,0x0,
 0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
 0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
 0x7,0x0,0x0,0x0,0x51,0x0,0x74,0x0,
@@ -1287,8 +1327,8 @@ extern const unsigned char qmlData[] = {
 0x73,0x0,0x69,0x0,0x6f,0x0,0x6e,0x0,
 0x20,0x0,0x66,0x0,0x6f,0x0,0x72,0x0,
 0x20,0x0,0x6d,0x0,0x6f,0x0,0x64,0x0,
-0x65,0x0,0x6c,0x0,0x0,0x0,0x0,0x0,
-0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
+0x65,0x0,0x6c,0x0,0x0,0x0,0x56,0x0,
+0x38,0x0,0x9,0x2,0x0,0x0,0x0,0x0,
 0xe,0x0,0x0,0x0,0x4b,0x0,0x65,0x0,
 0x79,0x0,0x62,0x0,0x6f,0x0,0x61,0x0,
 0x72,0x0,0x64,0x0,0x42,0x0,0x75,0x0,
@@ -1360,20 +1400,22 @@ extern const unsigned char qmlData[] = {
 0x5,0x0,0x0,0x0,0x69,0x0,0x6e,0x0,
 0x64,0x0,0x65,0x0,0x78,0x0,0x0,0x0,
 0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
-0x17,0x0,0x0,0x0,0x2e,0x0,0x2e,0x0,
-0x2f,0x0,0x49,0x0,0x6d,0x0,0x61,0x0,
-0x67,0x0,0x65,0x0,0x73,0x0,0x2f,0x0,
-0x62,0x0,0x61,0x0,0x63,0x0,0x6b,0x0,
-0x73,0x0,0x70,0x0,0x61,0x0,0x63,0x0,
-0x65,0x0,0x2e,0x0,0x70,0x0,0x6e,0x0,
-0x67,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
-0x17,0x0,0x0,0x0,0x2e,0x0,0x2e,0x0,
-0x2f,0x0,0x49,0x0,0x6d,0x0,0x61,0x0,
-0x67,0x0,0x65,0x0,0x73,0x0,0x2f,0x0,
-0x63,0x0,0x68,0x0,0x65,0x0,0x63,0x0,
-0x6b,0x0,0x6d,0x0,0x61,0x0,0x72,0x0,
-0x6b,0x0,0x2e,0x0,0x70,0x0,0x6e,0x0,
-0x67,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
+0x19,0x0,0x0,0x0,0x3a,0x0,0x2f,0x0,
+0x2e,0x0,0x2e,0x0,0x2f,0x0,0x69,0x0,
+0x6d,0x0,0x61,0x0,0x67,0x0,0x65,0x0,
+0x73,0x0,0x2f,0x0,0x62,0x0,0x61,0x0,
+0x63,0x0,0x6b,0x0,0x73,0x0,0x70,0x0,
+0x61,0x0,0x63,0x0,0x65,0x0,0x2e,0x0,
+0x70,0x0,0x6e,0x0,0x67,0x0,0x0,0x0,
+0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
+0x19,0x0,0x0,0x0,0x3a,0x0,0x2f,0x0,
+0x2e,0x0,0x2e,0x0,0x2f,0x0,0x69,0x0,
+0x6d,0x0,0x61,0x0,0x67,0x0,0x65,0x0,
+0x73,0x0,0x2f,0x0,0x63,0x0,0x68,0x0,
+0x65,0x0,0x63,0x0,0x6b,0x0,0x6d,0x0,
+0x61,0x0,0x72,0x0,0x6b,0x0,0x2e,0x0,
+0x70,0x0,0x6e,0x0,0x67,0x0,0x0,0x0,
+0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
 0x18,0x0,0x0,0x0,0x71,0x0,0x72,0x0,
 0x63,0x0,0x3a,0x0,0x2f,0x0,0x2f,0x0,
 0x2f,0x0,0x4b,0x0,0x65,0x0,0x79,0x0,

@@ -1,5 +1,4 @@
-/** * @author thurberdog*/
-/** * Finish */
+
 //--------------------------------------------------------------------------------------//
 //
 // Application: TimeLord1
@@ -42,15 +41,13 @@ function setFinnish(){
 
  warn004FN = warn004  = " Syötä työ luodaksesi listan"; //Enter Job task to create a punch down list";
 
-
  warn005FN = warn005  = "Uusi työn kuvaus tai olemassa oleva numero"; //New Job name or existing number ";
 
-warn006FN = warn006  = "Syötä materiaali"; //Please enter your Material!";
-
+ warn006FN = warn006  = "Syötä materiaali"; //Please enter your Material!";
  
  warn007FN = warn007  = "Syötä hinta"; //Please enter the Price!";
- warn008FN = warn008  = "Menun tyhjentäminen epäonnistui"; //clear menu failed";
 
+ warn008FN = warn008  = "Menun tyhjentäminen epäonnistui"; //clear menu failed";
 
  warn009FN = warn009  = "Syötä työn kuvaus"; //enter Job task to complete";
 
@@ -85,38 +82,36 @@ warn006FN = warn006  = "Syötä materiaali"; //Please enter your Material!";
  lbl016FN = lbl016   = "ostohinta tai jos varastossa syötä nolla"; //Purchase Price or zero if stock";
 
  lbl017FN = lbl017   = "Yksikköhinta"; // Enter Price per unit";
+
  lbl018FN = lbl018   = "Lisää tehtävä"; // Add task";
 
  lbl019FN = lbl019   = "Suorita tehtävä"; // Complete task";
+
  lbl020FN = lbl020   = "Työtehtävä"; // Job Task";
 
  lbl021FN = lbl021   = " Tehtävälista"; // Task List";
 
- 
  lbl022FN = lbl022   = "Menun tyhjentäminen epäonnistui"; //clear menu failed";
 
  lbl023FN = lbl023   = " Tehty"; // complete";
 
  lbl024FN = lbl024   = " Saapunut työpaikalle"; // 1st on site ";
 
- 
  lbl025FN = lbl025   = " Työryhmän jäsenet"; //on crew ";
 
  lbl026FN = lbl026   = " Tunteja"; // Hours ";
 
  lbl027FN = lbl027   = " Avoimet työt"; // Active Jobs";
 
-  lbl028FN = lbl028   = " Uusi työ"; // New Job: ";
+ lbl028FN = lbl028   = " Uusi työ"; // New Job: ";
 
  lbl029FN = lbl029   = " Olemassa oleva työ"; // Existing Job:  ";
-
 
  jobButtonTextFN = jobButtonText = "Työ"; // Job";
 
  materialsButtonTextFN = materialsButtonText = "Materiaalit"; // Materials";
 
-  taskButtontextFN = taskButtontext = "Tehtävälista"; // Task List"; 
-
+ taskButtontextFN = taskButtontext = "Tehtävälista"; // Task List";
  
  laborButtonTextFN =  laborButtonText = "Työmäärä"; // Labor";
 

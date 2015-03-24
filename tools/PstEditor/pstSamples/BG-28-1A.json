@@ -1,0 +1,425 @@
+{
+    "cells": [
+        {
+            "bleed": {
+                "bottom": 0.0625,
+                "left": 0.0625,
+                "right": 0.0625,
+                "top": 0.0625
+            },
+            "height": 2,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 1,
+            "rotation": 0,
+            "signature_type": "F2-1 2x6 bookmarks",
+            "text": null,
+            "width": 6,
+            "width_mbr": null,
+            "x": 21.5625,
+            "x_mbr": null,
+            "y": 0.4605986111,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.0625,
+                "left": 0.0625,
+                "right": 0.0625,
+                "top": 0.0625
+            },
+            "height": 4.25,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 6,
+            "rotation": 0,
+            "signature_type": "F2-1 4.25x5.5 postcards",
+            "text": null,
+            "width": 5.5,
+            "width_mbr": null,
+            "x": 15.6875,
+            "x_mbr": null,
+            "y": 9.3355986111,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.125,
+                "left": 0.125,
+                "right": 0.125,
+                "top": 0.125
+            },
+            "height": 4,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 2,
+            "rotation": 0,
+            "signature_type": "F2-1 4x6 postcards",
+            "text": null,
+            "width": 6,
+            "width_mbr": null,
+            "x": 21.5,
+            "x_mbr": null,
+            "y": 2.6500972221999999,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.125,
+                "left": 0.125,
+                "right": 0.125,
+                "top": 0.125
+            },
+            "height": 4,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 3,
+            "rotation": 0,
+            "signature_type": "F2-1 4x6 postcards",
+            "text": null,
+            "width": 6,
+            "width_mbr": null,
+            "x": 21.5,
+            "x_mbr": null,
+            "y": 6.9000972222000003,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.125,
+                "left": 0.125,
+                "right": 0.125,
+                "top": 0.125
+            },
+            "height": 4,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 4,
+            "rotation": 0,
+            "signature_type": "F2-1 4x6 postcards",
+            "text": null,
+            "width": 6,
+            "width_mbr": null,
+            "x": 21.5,
+            "x_mbr": null,
+            "y": 11.150098611100001,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.125,
+                "left": 0.125,
+                "right": 0.125,
+                "top": 0.125
+            },
+            "height": 4,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 5,
+            "rotation": 0,
+            "signature_type": "F2-1 4x6 postcards",
+            "text": null,
+            "width": 6,
+            "width_mbr": null,
+            "x": 21.5,
+            "x_mbr": null,
+            "y": 15.400097222199999,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.0625,
+                "left": 0.0625,
+                "right": 0.0625,
+                "top": 0.0625
+            },
+            "height": 5,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 7,
+            "rotation": 0,
+            "signature_type": "F2-1 5x7 postcards",
+            "text": null,
+            "width": 7,
+            "width_mbr": null,
+            "x": 14.1875,
+            "x_mbr": null,
+            "y": 2.2105972222000001,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.0625,
+                "left": 0.0625,
+                "right": 0.0625,
+                "top": 0.0625
+            },
+            "height": 5,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 8,
+            "rotation": 0,
+            "signature_type": "F2-1 5x7 postcards",
+            "text": null,
+            "width": 7,
+            "width_mbr": null,
+            "x": 7.0625,
+            "x_mbr": null,
+            "y": 2.2105972222000001,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.0625,
+                "left": 0.0625,
+                "right": 0.0625,
+                "top": 0.0625
+            },
+            "height": 6,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 9,
+            "rotation": 0,
+            "signature_type": "F2-1 6x1 jumbo mailers",
+            "text": null,
+            "width": 11,
+            "width_mbr": null,
+            "x": 4.0625,
+            "x_mbr": null,
+            "y": 7.5855986111,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.0625,
+                "left": 0.0625,
+                "right": 0.0625,
+                "top": 0.0625
+            },
+            "height": 5.5,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 10,
+            "rotation": 0,
+            "signature_type": "F2-1 8.5x5.5 postcards",
+            "text": null,
+            "width": 8.5,
+            "width_mbr": null,
+            "x": 12.6875,
+            "x_mbr": null,
+            "y": 13.960597222200001,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.0625,
+                "left": 0.0625,
+                "right": 0.0625,
+                "top": 0.0625
+            },
+            "height": 5.5,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 11,
+            "rotation": 0,
+            "signature_type": "F2-1 8.5x5.5 postcards",
+            "text": null,
+            "width": 8.5,
+            "width_mbr": null,
+            "x": 4.0625,
+            "x_mbr": null,
+            "y": 13.960597222200001,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.060999999999999999,
+                "left": 0.060999999999999999,
+                "right": 0.060999999999999999,
+                "top": 0.060999999999999999
+            },
+            "height": 2,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 19,
+            "rotation": 0,
+            "signature_type": "F2-1 business cards",
+            "text": null,
+            "width": 3.5,
+            "width_mbr": null,
+            "x": 0.1875,
+            "x_mbr": null,
+            "y": 2.5825999999999998,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.060999999999999999,
+                "left": 0.060999999999999999,
+                "right": 0.060999999999999999,
+                "top": 0.060999999999999999
+            },
+            "height": 2,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 18,
+            "rotation": 0,
+            "signature_type": "F2-1 business cards",
+            "text": null,
+            "width": 3.5,
+            "width_mbr": null,
+            "x": 0.1875,
+            "x_mbr": null,
+            "y": 4.7075986110999999,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.060999999999999999,
+                "left": 0.060999999999999999,
+                "right": 0.060999999999999999,
+                "top": 0.060999999999999999
+            },
+            "height": 2,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 17,
+            "rotation": 0,
+            "signature_type": "F2-1 business cards",
+            "text": null,
+            "width": 3.5,
+            "width_mbr": null,
+            "x": 0.1875,
+            "x_mbr": null,
+            "y": 6.8325986110999999,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.060999999999999999,
+                "left": 0.060999999999999999,
+                "right": 0.060999999999999999,
+                "top": 0.060999999999999999
+            },
+            "height": 2,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 16,
+            "rotation": 0,
+            "signature_type": "F2-1 business cards",
+            "text": null,
+            "width": 3.5,
+            "width_mbr": null,
+            "x": 0.1875,
+            "x_mbr": null,
+            "y": 8.9575986110999999,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.060999999999999999,
+                "left": 0.060999999999999999,
+                "right": 0.060999999999999999,
+                "top": 0.060999999999999999
+            },
+            "height": 2,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 15,
+            "rotation": 0,
+            "signature_type": "F2-1 business cards",
+            "text": null,
+            "width": 3.5,
+            "width_mbr": null,
+            "x": 0.1875,
+            "x_mbr": null,
+            "y": 11.0825986111,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.060999999999999999,
+                "left": 0.060999999999999999,
+                "right": 0.060999999999999999,
+                "top": 0.060999999999999999
+            },
+            "height": 2,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 14,
+            "rotation": 0,
+            "signature_type": "F2-1 business cards",
+            "text": null,
+            "width": 3.5,
+            "width_mbr": null,
+            "x": 0.1875,
+            "x_mbr": null,
+            "y": 13.2075986111,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.060999999999999999,
+                "left": 0.060999999999999999,
+                "right": 0.060999999999999999,
+                "top": 0.060999999999999999
+            },
+            "height": 2,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 13,
+            "rotation": 0,
+            "signature_type": "F2-1 business cards",
+            "text": null,
+            "width": 3.5,
+            "width_mbr": null,
+            "x": 0.1875,
+            "x_mbr": null,
+            "y": 15.332599999999999,
+            "y_mbr": null
+        },
+        {
+            "bleed": {
+                "bottom": 0.060999999999999999,
+                "left": 0.060999999999999999,
+                "right": 0.060999999999999999,
+                "top": 0.060999999999999999
+            },
+            "height": 2,
+            "height_mbr": null,
+            "markup": [
+            ],
+            "position": 12,
+            "rotation": 0,
+            "signature_type": "F2-1 business cards",
+            "text": null,
+            "width": 3.5,
+            "width_mbr": null,
+            "x": 0.1875,
+            "x_mbr": null,
+            "y": 17.457599999999999,
+            "y_mbr": null
+        }
+    ],
+    "height": 20,
+    "id": "BG-28-1A",
+    "width": 28
+}
