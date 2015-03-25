@@ -26,8 +26,6 @@ GetPressSheet::GetPressSheet(const int id)
 
 void GetPressSheet::onResponseFinished(const QJsonDocument jsonResponse)
 {
-#ifdef Q_OS_LINUX
-#ifdef Q_OS_ANDROID
     Parser parser;
     auto jsonObject = parser.parsePressSheet(jsonResponse.object());//todo delete
 
@@ -35,8 +33,6 @@ void GetPressSheet::onResponseFinished(const QJsonDocument jsonResponse)
     jsonObjectList.append(jsonObject);
 
     emit setModelPressSheetsListToQML(jsonObjectList);
-#endif
-#endif
 }
 
 /********************
@@ -49,8 +45,6 @@ GetPressSheetsList::GetPressSheetsList()
 
 void GetPressSheetsList::onResponseFinished(const QJsonDocument jsonResponse)
 {
-#ifdef Q_OS_LINUX
-#ifdef Q_OS_ANDROID
     Parser parser;
     auto pss = parser.parsePressSheets(jsonResponse.array());
 
@@ -63,8 +57,6 @@ void GetPressSheetsList::onResponseFinished(const QJsonDocument jsonResponse)
     }
 
     emit setModelPressSheetsListToQML(jsonObjectList);
-#endif
-#endif
 }
 
 /***********************
@@ -78,8 +70,6 @@ GetPressSheetTemplate::GetPressSheetTemplate(const QString pressSheetType)
 
 void GetPressSheetTemplate::onResponseFinished(const QJsonDocument jsonResponse)
 {
-#ifdef Q_OS_LINUX
-#ifdef Q_OS_ANDROID
     Parser parser;
     QJsonObject jsonObjectPressSheetTemplate;
     if (jsonResponse.array().size() > 0)
@@ -94,8 +84,6 @@ void GetPressSheetTemplate::onResponseFinished(const QJsonDocument jsonResponse)
                     file.write(pstByteArray);
                     file.close();
     emit setModelPressSheetTemplateToQML(pstByteArray);
-#endif
-#endif
 }
 
 /***********************
@@ -108,8 +96,6 @@ GetPressSheetItemsList::GetPressSheetItemsList(const long long pressSheetId)
 
 void GetPressSheetItemsList::onResponseFinished(const QJsonDocument jsonResponse)
 {
-#ifdef Q_OS_LINUX
-#ifdef Q_OS_ANDROID
     Parser parser;
     auto psis = parser.parsePressSheetItems(jsonResponse.array());
 
@@ -123,8 +109,6 @@ void GetPressSheetItemsList::onResponseFinished(const QJsonDocument jsonResponse
     }
 
     emit setModelPressSheetItemsListToQML(jsonObjectList);
-#endif
-#endif
 }
 
 /***********************
@@ -137,8 +121,6 @@ GetOrderItem::GetOrderItem(const long long orderId, const QString orderItemId)
 
 void GetOrderItem::onResponseFinished(const QJsonDocument jsonResponse)
 {
-#ifdef Q_OS_LINUX
-#ifdef Q_OS_ANDROID
     Parser parser;
     auto jsonObject = parser.parseOrderItem(jsonResponse.object());
 
@@ -146,8 +128,6 @@ void GetOrderItem::onResponseFinished(const QJsonDocument jsonResponse)
     jsonObjectList.append(jsonObject);
 
     emit setModelOrderItemToQML(jsonObjectList);
-#endif
-#endif
 }
 
 /***********************

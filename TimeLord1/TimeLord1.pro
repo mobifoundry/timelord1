@@ -1,8 +1,6 @@
 TEMPLATE = app
-QT += network qml quick sql widgets serialport
-#CONFIG += qtquickcompiler
-CONFIG += c++14
-
+QT = network qml quick sql widgets
+# CONFIG += qtquickcompiler
 SOURCES += main.cpp \
     mainapi.cpp \
     configholder.cpp \
@@ -26,9 +24,7 @@ SOURCES += main.cpp \
     shwsapimethods.cpp \
     profitapimockdata.cpp \
     profitapifile.cpp \
-    shwsapimockdata.cpp \
-    qtquick2applicationviewer.cpp \
-    cutterapi.cpp
+    shwsapimockdata.cpp
 
 RESOURCES += qml.qrc
 
@@ -64,6 +60,4 @@ HEADERS += \
     shwsapimethods.h \
     profitapimockdata.h \
     profitapifile.h \
-    shwsapimockdata.h \
-    qtquick2applicationviewer.h \
-    cutterapi.h
+    shwsapimockdata.h

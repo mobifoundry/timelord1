@@ -1,125 +1,29 @@
 <RCC>
     <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>TimeLordOne.qml</file>
+        <file>MainViewScreen.qml</file>
         <file>../images/small_logo.png</file>
         <file>../js/English.js</file>
         <file>../js/var.js</file>
         <file>../js/MainMenu.js</file>
         <file>../js/MainView.js</file>
         <file>../js/Tone.js</file>
+        <file>Globals.qml</file>
+        <file>MainView.qml</file>
         <file>../js/Swedish.js</file>
         <file>../js/AboutView.js</file>
         <file>../js/Espana.js</file>
         <file>../js/Finnish.js</file>
+        <file>UniversalButton.qml</file>
+        <file>LineEdit.qml</file>
+        <file>Keyboard.qml</file>
+        <file>KeyboardDigit.qml</file>
+        <file>KeyboardButton.qml</file>
         <file>../images/backspace.png</file>
         <file>../images/checkmark.png</file>
         <file>../images/keyboard.png</file>
-        <file>gui/Globals.qml</file>
-        <file>gui/Keyboard.qml</file>
-        <file>gui/KeyboardButton.qml</file>
-        <file>gui/KeyboardDigit.qml</file>
-        <file>gui/LineEdit.qml</file>
-        <file>gui/main.qml</file>
-        <file>gui/MainView.qml</file>
-        <file>gui/MainViewScreen.qml</file>
-        <file>gui/SettingsWindow.qml</file>
-        <file>gui/TimeLordOne.qml</file>
-        <file>gui/UniversalButton.qml</file>
-        <file>abstractapimethod.cpp</file>
-        <file>abstractapimethod.h</file>
-        <file>abstractcontextapi.cpp</file>
-        <file>abstractcontextapi.h</file>
-        <file>cell.cpp</file>
-        <file>cell.h</file>
-        <file>configholder.cpp</file>
-        <file>configholder.h</file>
-        <file>cutterapi.cpp</file>
-        <file>cutterapi.h</file>
-        <file>cuttingcourse.cpp</file>
-        <file>cuttingcourse.h</file>
-        <file>cuttingcoursedatabase.cpp</file>
-        <file>cuttingcoursedatabase.h</file>
-        <file>cuttinglog.cpp</file>
-        <file>cuttinglog.h</file>
-        <file>jdffileinfo.cpp</file>
-        <file>jdffileinfo.h</file>
-        <file>main.cpp</file>
-        <file>main.hxx</file>
-        <file>mainapi.cpp</file>
-        <file>mainapi.h</file>
-        <file>orderitem.cpp</file>
-        <file>orderitem.h</file>
-        <file>parser.cpp</file>
-        <file>parser.h</file>
-        <file>presssheet.cpp</file>
-        <file>presssheet.h</file>
-        <file>presssheetitem.cpp</file>
-        <file>presssheetitem.h</file>
-        <file>presssheettemplate.cpp</file>
-        <file>presssheettemplate.h</file>
-        <file>profitapi.cpp</file>
-        <file>profitapi.h</file>
-        <file>profitapifile.cpp</file>
-        <file>profitapifile.h</file>
-        <file>profitapimethods.cpp</file>
-        <file>profitapimethods.h</file>
-        <file>profitapimockdata.cpp</file>
-        <file>profitapimockdata.h</file>
-        <file>qtquick2applicationviewer.cpp</file>
-        <file>qtquick2applicationviewer.h</file>
-        <file>restclient.cpp</file>
-        <file>restclient.h</file>
-        <file>shwsapi.cpp</file>
-        <file>shwsapi.h</file>
-        <file>shwsapimethods.cpp</file>
-        <file>shwsapimethods.h</file>
-        <file>shwsapimockdata.cpp</file>
-        <file>shwsapimockdata.h</file>
-        <file>step.cpp</file>
-        <file>step.h</file>
-        <file>gui/Components/BracketRight.qml</file>
-        <file>gui/Components/CutCourseStepsPanel.qml</file>
-        <file>gui/Components/CutterButtons.qml</file>
-        <file>gui/Components/ElbowBottomLeft.qml</file>
-        <file>gui/Components/ElbowBottomRight.qml</file>
-        <file>gui/Components/ElbowTopLeft.qml</file>
-        <file>gui/Components/ElbowTopRight.qml</file>
-        <file>gui/Components/ErrorPane.qml</file>
-        <file>gui/Components/Keyboard.qml</file>
-        <file>gui/Components/KeyboardButton.qml</file>
-        <file>gui/Components/KeyboardDigit.qml</file>
-        <file>gui/Components/LineEdit.qml</file>
-        <file>gui/Components/LoadIndicator.qml</file>
-        <file>gui/Components/UniversalButton.qml</file>
-        <file>gui/Images/add.ico</file>
-        <file>gui/Images/backspace.png</file>
-        <file>gui/Images/bg.jpg</file>
-        <file>gui/Images/bg_grid.png</file>
-        <file>gui/Images/bg_noise.jpg</file>
-        <file>gui/Images/bg_noise_light.jpg</file>
-        <file>gui/Images/checkmark.png</file>
-        <file>gui/Images/cut.png</file>
-        <file>gui/Images/cutPosition.png</file>
-        <file>gui/Images/dots_512.png</file>
-        <file>gui/Images/dots_512_invert.png</file>
-        <file>gui/Images/finished.png</file>
-        <file>gui/Images/ind_load.gif</file>
-        <file>gui/Images/ind_load_128_green.GIF</file>
-        <file>gui/Images/keyboard.png</file>
-        <file>gui/Images/knife.png</file>
-        <file>gui/Images/KorectKut.ico</file>
-        <file>gui/Images/KorectKut.jpg</file>
-        <file>gui/Images/KorectKut.png</file>
-        <file>gui/Images/KorectKut1.ico</file>
-        <file>gui/Images/KorectKut2.ico</file>
-        <file>gui/Images/LoginBanner.png</file>
-        <file>gui/Images/logo.png</file>
-        <file>gui/Images/outLog.png</file>
-        <file>gui/Images/putLog.png</file>
-        <file>gui/Images/rotate.png</file>
-        <file>gui/Images/scissorhands.ico</file>
-        <file>gui/Images/settings.png</file>
-        <file>gui/Images/waste.png</file>
-        <file>gui/Images/global.jpg</file>
-        <file>gui/Images/global.png</file>
+        <file>SettingsWindow.qml</file>
     </qresource>
 </RCC>

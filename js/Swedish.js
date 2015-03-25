@@ -100,5 +100,14 @@ function setSwedish()	{
     viewlbljob   = viewlbljobSW; // = "jobböversikt"; //"JobView";
     viewlbltask  = viewlbltaskSW; // = "uppgiftsöversikt"; //"TaskView";
 	
+    //aboutMenuItem      = new MenuItem(menulblabout, MENU_ITEM_ABOUT);
+   // mainMenuItem       = new MenuItem(menulblmain , MENU_ITEM_MAIN);
+   // jobMenuItem        = new MenuItem(menulbljob, MENU_ITEM_JOB);
+   // laborMenuItem      = new MenuItem(menulbllabor, MENU_ITEM_LABOR);
+   // materialsMenuItem  = new MenuItem(menulblmaterials, MENU_ITEM_MATERIALS);
+  //  cursorModeMenuItem = new MenuItem(menulblcursor, CMD_CURSOR_MODE);
+  //  tabModeMenuItem    = new MenuItem(menulbltab, CMD_TAB_MODE);
+
+
 }
 	

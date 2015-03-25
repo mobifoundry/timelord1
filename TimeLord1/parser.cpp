@@ -1,14 +1,11 @@
 #include "parser.h"
 #include "QDebug"
-#ifdef Q_OS_LINUX
-#ifdef Q_OS_ANDROID
+
 Parser::Parser(QObject *parent) :
     QObject(parent),
     keysPST{"id","width","height","cells"}
 {
 }
-#endif
-#endif
 
 template <typename T>
 auto Parser::serializeJsonToClass( const QJsonObject &jsonObject, T *t) const -> decltype(t)

@@ -13,6 +13,7 @@ function setEspana(){
  //   uiManager.showNotification(3000, "info", TimeLordES + " <br> " + lbl013  + VERSION.fontcolor("Green") +
 //    lbl005 + author.fontcolor("Grey") + "<br> &copy 2009" +  company.fontcolor("Blue"));
    console.log("setEspana Button clicked")
+    timeLord = timeLordES;
 
     warn001  = warn001ES; //  = " Nombre d'empleado(a) o numero ";
 // The parenthetical a is to provide support for a female employee.  Another plus for us!
@@ -95,7 +96,7 @@ function setEspana(){
 
     lbl029   = lbl029ES; // = " Trabajo existente:";
 
-    jobButtonText = jobButtonTextES; // = "Trabajo";
+    jbButtonText = jobButtonTextES; // = "Trabajo";
 
     materialsButtonText = materialsButtonTextES; // = "Materiales";
 

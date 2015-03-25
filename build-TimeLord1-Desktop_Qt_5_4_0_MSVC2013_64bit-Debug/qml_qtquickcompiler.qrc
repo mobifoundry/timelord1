@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<RCC>
-    <qresource prefix="/">
-        <file alias="../images/small_logo.png">../images/small_logo.png</file>
-        <file alias="../images/backspace.png">../images/backspace.png</file>
-        <file alias="../images/checkmark.png">../images/checkmark.png</file>
-        <file alias="../images/keyboard.png">../images/keyboard.png</file>
-    </qresource>
-</RCC>

@@ -8,7 +8,6 @@
 #include <QProcess>
 
 #ifndef Q_OS_ANDROID
-#include <QtSerialPort/QSerialPort>
 #include <QtSerialPort/QSerialPortInfo>
 #endif
 

@@ -15,12 +15,8 @@ void ProfitApiFile::queryAuthorization()
 
 void ProfitApiFile::queryPressSheetsList()
 {
-#ifdef Q_OS_LINUX
-#ifdef Q_OS_ANDROID
     Parser parser;
     emit sendModelToQML(parser.readFileList(m_pathFile, m_fileType));
-#endif
-#endif
 }
 
 void ProfitApiFile::queryPressSheetTemplate(const QString &nameFile)

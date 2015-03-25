@@ -3,29 +3,22 @@
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
-    QtQuick2ApplicationViewer viewer;
 
+    QQmlApplicationEngine engine;
 
     QString sourceFile;
     {
         ConfigHolder configHolder;
         if(configHolder.isConfigFileExists())
         {
-            sourceFile = "qrc:/gui/MainView.qml";
+            sourceFile = "qrc:/main.qml";
         }
         else
         {
-            sourceFile = "qrc:/gui/SettingsWindow.qml";
+            sourceFile = "qrc:/SettingsWindow.qml";
         }
-        qWarning()<<"sourceFile:"<<sourceFile;
     }
-
-    MainApi *mA = new MainApi(viewer.rootContext());
-
-    mA->setObjectName("mAObject");
-    QString mAObject = mA->objectName();
-    qWarning()<<mAObject;
-    viewer.setSource(QUrl(sourceFile));
-    viewer.showFullScreen();
+    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+//    MainApi *mA = new MainApi(viewer.rootContext());
     return app.exec();
 }
