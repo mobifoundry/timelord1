@@ -30,8 +30,9 @@ public:
     explicit Parser(QObject *parent = 0);
 
     template <typename T>
+#ifndef Q_OS_WIN
     auto serializeJsonToClass(const QJsonObject &jsonObject, T *t) const -> decltype(t);
-
+#endif
     PressSheet * parsePressSheet(const QJsonObject &object) const;
     QList<PressSheet*> parsePressSheets(const QJsonArray &jsonArray) const;
 

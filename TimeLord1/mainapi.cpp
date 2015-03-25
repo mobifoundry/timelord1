@@ -49,6 +49,7 @@ void::MainApi::logIn(QString userName, QString password)
     cnfgHolder->initialize();
     cnfgHolder->setUsername(userName);
     cnfgHolder->setPassword(password.toUpper());
+
 #ifndef Q_OS_ANDROID
     if (cutterApi != nullptr)
     {
@@ -66,6 +67,7 @@ void::MainApi::logIn(QString userName, QString password)
     connect(cutterApi, &CutterApi::statusError, this, &MainApi::logWriteError);
     connect(cutterApi, &CutterApi::nextStep, this, &MainApi::nextStep);
 #endif
+
     if (userName.toUpper() == "DEMO" && password.toUpper() == "DEMO")
     {
         profitApi = new ProfitApiMockData(this);
@@ -153,6 +155,7 @@ void MainApi::loadCutCoursesFromDb()
 
 void MainApi::loadCutterProgram()
 {
+
 #ifndef Q_OS_ANDROID
     quint16 startRegister;
     qDebug()<<"MainApi::loadCutterProgram-"<<cnfgHolder->stationType();
@@ -168,8 +171,10 @@ void MainApi::loadCutterProgram()
     {
         emit statusError("Wrong station type is chosen.");
     }
+
     cutterApi->loadCutterProgram(shwsApi->getCutPositionList(), startRegister);
 #endif
+
 }
 
 void MainApi::deleteObjectList(QList<QObject *> &objectList)

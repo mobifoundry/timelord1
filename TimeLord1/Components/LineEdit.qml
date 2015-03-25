@@ -143,7 +143,7 @@ TextField
 
         width: height * 1.5
         height: parent.height / 1.5
-        source: "../Images/keyboard.png"
+        source: "qrc:/../images/keyboard.png"
 
         MouseArea{
             anchors.fill: parent

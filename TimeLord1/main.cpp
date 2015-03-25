@@ -7,6 +7,7 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     QString sourceFile;
+    QUrl sourceUrl;
     {
         ConfigHolder configHolder;
         if(configHolder.isConfigFileExists())
@@ -17,8 +18,10 @@ int main(int argc, char *argv[])
         {
             sourceFile = "qrc:/SettingsWindow.qml";
         }
+        sourceUrl = QUrl(sourceFile);
+
     }
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    engine.load( QUrl(sourceUrl ) );
 //    MainApi *mA = new MainApi(viewer.rootContext());
     return app.exec();
 }

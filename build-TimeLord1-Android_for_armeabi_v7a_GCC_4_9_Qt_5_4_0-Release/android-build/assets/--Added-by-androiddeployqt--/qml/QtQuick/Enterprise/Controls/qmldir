@@ -1,4 +1,0 @@
-module QtQuick.Enterprise.Controls
-plugin qtquickenterprisecontrolsplugin
-classname QtQuickEnterpriseControlsPlugin
-#typeinfo plugins.qmltypes

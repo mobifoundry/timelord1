@@ -25,5 +25,48 @@
         <file>../images/checkmark.png</file>
         <file>../images/keyboard.png</file>
         <file>SettingsWindow.qml</file>
+        <file>Components/BracketRight.qml</file>
+        <file>Components/CutCourseStepsPanel.qml</file>
+        <file>Components/CutterButtons.qml</file>
+        <file>Components/ElbowBottomLeft.qml</file>
+        <file>Components/ElbowBottomRight.qml</file>
+        <file>Components/ElbowTopLeft.qml</file>
+        <file>Components/ElbowTopRight.qml</file>
+        <file>Components/ErrorPane.qml</file>
+        <file>Components/Keyboard.qml</file>
+        <file>Components/KeyboardButton.qml</file>
+        <file>Components/KeyboardDigit.qml</file>
+        <file>Components/LineEdit.qml</file>
+        <file>Components/LoadIndicator.qml</file>
+        <file>Components/UniversalButton.qml</file>
+        <file>Images/add.ico</file>
+        <file>Images/backspace.png</file>
+        <file>Images/bg.jpg</file>
+        <file>Images/bg_grid.png</file>
+        <file>Images/bg_noise.jpg</file>
+        <file>Images/bg_noise_light.jpg</file>
+        <file>Images/checkmark.png</file>
+        <file>Images/cut.png</file>
+        <file>Images/cutPosition.png</file>
+        <file>Images/dots_512.png</file>
+        <file>Images/dots_512_invert.png</file>
+        <file>Images/finished.png</file>
+        <file>Images/ind_load.gif</file>
+        <file>Images/ind_load_128_green.GIF</file>
+        <file>Images/keyboard.png</file>
+        <file>Images/knife.png</file>
+        <file>Images/KorectKut.ico</file>
+        <file>Images/KorectKut.jpg</file>
+        <file>Images/KorectKut.png</file>
+        <file>Images/KorectKut1.ico</file>
+        <file>Images/KorectKut2.ico</file>
+        <file>Images/LoginBanner.png</file>
+        <file>Images/logo.png</file>
+        <file>Images/outLog.png</file>
+        <file>Images/putLog.png</file>
+        <file>Images/rotate.png</file>
+        <file>Images/scissorhands.ico</file>
+        <file>Images/settings.png</file>
+        <file>Images/waste.png</file>
     </qresource>
 </RCC>

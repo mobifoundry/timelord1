@@ -1,6 +1,6 @@
 #include "parser.h"
 #include "QDebug"
-
+#ifndef Q_OS_WIN
 Parser::Parser(QObject *parent) :
     QObject(parent),
     keysPST{"id","width","height","cells"}
@@ -58,7 +58,7 @@ auto Parser::serializeJsonToClass( const QJsonObject &jsonObject, T *t) const ->
     }
     return t;
 }
-
+#endif
 QString Parser::stringTo_ToLower(const QString &propName) const
 {
     QString propNameTo_ToLower;
@@ -75,18 +75,20 @@ QString Parser::stringTo_ToLower(const QString &propName) const
     }
     return propNameTo_ToLower;
 }
-
+#ifndef Q_OS_WIN
 PressSheet *Parser::parsePressSheet(const QJsonObject &jsonObject) const
 {
     return serializeJsonToClass(jsonObject, new PressSheet());
 }
-
+#endif
 QList<PressSheet *> Parser::parsePressSheets(const QJsonArray &jsonArray) const
 {
     QList<PressSheet*> pss;
     for (auto iter : jsonArray)
     {
+#ifndef Q_OS_WIN
         pss.append(serializeJsonToClass(iter.toObject(), new PressSheet()));  // parsePressSheet(iter.toObject()));
+#endif
     }
     return pss;
 }
@@ -123,7 +125,7 @@ CuttingCourse *Parser::parseCuttingCourse(const QJsonObject &jsonObjectCuttingCo
 {
     auto byteArrayToLower = QJsonDocument(jsonObjectCuttingCourse).toJson().toLower();
     auto jsonObjectCuttingCourseToLower = QJsonDocument::fromJson(byteArrayToLower).object();
-
+#ifndef Q_OS_WIN
     auto *cuttingcourse = serializeJsonToClass(jsonObjectCuttingCourseToLower, new CuttingCourse(parent));
 
     QJsonArray stepArray = (jsonObjectCuttingCourseToLower["steps"]).toArray();
@@ -133,12 +135,16 @@ CuttingCourse *Parser::parseCuttingCourse(const QJsonObject &jsonObjectCuttingCo
         steps.append(parseStep(iter.toObject(), cuttingcourse));
     }
     cuttingcourse->setSteps(steps);
-
+#endif
+    CuttingCourse * cuttingcourse; // = new CuttingCourse();
     return cuttingcourse;
+
+
 }
 
 Step *Parser::parseStep(const QJsonObject &jsonObject, QObject *parent) const
 {
+#ifndef Q_OS_WIN
     auto *step = serializeJsonToClass(jsonObject, new Step(parent));
 
     QJsonArray cuttingCellsArray = (jsonObject["cuttinglogs"]).toArray();
@@ -148,12 +154,15 @@ Step *Parser::parseStep(const QJsonObject &jsonObject, QObject *parent) const
         cuttingLogs.append(parseCuttingLog(iter.toObject(), step));
     }
     step->setCuttingLogs(cuttingLogs);
-
+#endif
+    Step * step;
     return step;
+
 }
 
 CuttingLog *Parser::parseCuttingLog(const QJsonObject &jsonObject,  QObject *parent) const
 {
+#ifndef Q_OS_WIN
     auto *cuttingLog = serializeJsonToClass(jsonObject, new CuttingLog(parent));
 
     QJsonArray cuttingCellsArray = (jsonObject["cells"]).toArray();
@@ -163,18 +172,28 @@ CuttingLog *Parser::parseCuttingLog(const QJsonObject &jsonObject,  QObject *par
         cells.append(parseCell(iter.toObject(), cuttingLog));
     }
     cuttingLog->setCells(cells);
-
+#endif
+    CuttingLog * cuttingLog;
     return cuttingLog;
+
 }
 
 Cell *Parser::parseCell(const QJsonObject &jsonObject, QObject *parent) const
 {
+#ifndef Q_OS_WIN
     return serializeJsonToClass(jsonObject, new Cell(parent));
+#endif
+    Cell * cell;
+    return cell;
 }
 
 PressSheetItem *Parser::parsePressSheetItem(const QJsonObject &jsonObject) const
 {
+#ifndef Q_OS_WIN
     return serializeJsonToClass(jsonObject, new PressSheetItem);
+#endif
+    PressSheetItem * presssheetitem;
+    return presssheetitem;
 }
 
 QList<PressSheetItem *> Parser::parsePressSheetItems(const QJsonArray &jsonArray) const
@@ -190,7 +209,11 @@ QList<PressSheetItem *> Parser::parsePressSheetItems(const QJsonArray &jsonArray
 
 OrderItem *Parser::parseOrderItem(const QJsonObject &jsonObject) const
 {
+#ifndef Q_OS_WIN
     return serializeJsonToClass(jsonObject, new OrderItem);
+#endif
+    OrderItem * orderitem;
+    return orderitem;
 }
 
 QByteArray Parser::transformPressSheetTemplate(const QJsonObject &jsonObject) const
