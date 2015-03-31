@@ -27,6 +27,7 @@ MainApi::MainApi(QQmlContext *context, QObject *parent) :
 MainApi::~MainApi()
 {
     delete cnfgHolder;
+
 #ifndef Q_OS_ANDROID
     delete cutterApi;
 #endif
