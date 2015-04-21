@@ -34,7 +34,14 @@ QML_IMPORT_PATH =
 # Default rules for deployment.
 include(deployment.pri)
 
-DISTFILES +=
+DISTFILES += \
+    translation_en.ts \
+    translation_es.ts \
+    translation_fi.ts \
+    translation_fr.ts \
+    translation_nv.ts \
+    translation_sv.ts \
+    translation_zh.ts
 
 HEADERS += \
     main.hxx \
@@ -61,3 +68,4 @@ HEADERS += \
     profitapimockdata.h \
     profitapifile.h \
     shwsapimockdata.h
+TRANSLATIONS = translation_en.ts translation_sp.ts translation_fr.ts

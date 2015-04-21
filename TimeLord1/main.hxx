@@ -6,5 +6,9 @@
 #include "mainapi.h"
 //#include "qtquick2applicationviewer.h"
 //#include "../tools/CustomQmlElement/elbow.h"
+   QQmlApplicationEngine * engine;
+   QTranslator translator;
+   QString sourceFile;
+   QUrl sourceUrl;
 #endif // MAIN_HXX
 

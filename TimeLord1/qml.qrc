@@ -68,5 +68,15 @@
         <file>Images/scissorhands.ico</file>
         <file>Images/settings.png</file>
         <file>Images/waste.png</file>
+        <file>SplashScreen.qml</file>
+        <file>Images/Icon.png</file>
+        <file>Property.qml</file>
+        <file>Images/flag.png</file>
+        <file>Images/Germany.png</file>
+        <file>Images/louis.png</file>
+        <file>Images/Picture 409.png</file>
+        <file>Images/Picture 410.png</file>
+        <file>Images/small_logo.png</file>
+        <file>Images/Switzerland.png</file>
     </qresource>
 </RCC>

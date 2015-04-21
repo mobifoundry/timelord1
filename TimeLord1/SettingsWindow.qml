@@ -54,7 +54,7 @@ Rectangle
         {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            text: "Settings"
+            text: qsTr("Settings")
             font.pixelSize: fontText * 1.4
             color: "Gainsboro"
         }
@@ -64,7 +64,7 @@ Rectangle
             id: buttonOk
             width: parent.width / 7
             height: pageMargin * 2.5
-            text: "Ok"
+            text: qsTr("Ok")
             //fontSize: fontText
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 20
@@ -108,7 +108,7 @@ Rectangle
             id: buttonCancel
             width: buttonOk.width
             height: buttonOk.height
-            text: "Cancel"
+            text: qsTr("Cancel")
             //fontSize: buttonOk.fontSize
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 20
@@ -142,7 +142,7 @@ Rectangle
 
                 Text
                 {
-                    text: "port"
+                    text:qsTr("port")
                     color: colorText
                     font.pixelSize: fontText
                 }
@@ -153,7 +153,7 @@ Rectangle
                     anchors.left: parent.left
                     anchors.right: parent.right
                     anchors.leftMargin: columnMargin
-                    model: configHolder.realPorts()
+                    //model: configHolder.realPorts()
                     currentIndex:
                     {
                         for (var i = 0; i < configHolder.realPorts().length; ++i)
@@ -165,7 +165,7 @@ Rectangle
 
                 Text
                 {
-                    text: "port2"
+                    text: qsTr("port2")
                     color: colorText
                     font.pixelSize: fontText
                 }
@@ -176,7 +176,7 @@ Rectangle
                     anchors.left: parent.left
                     anchors.right: parent.right
                     anchors.leftMargin: columnMargin
-                    model: configHolder.realPorts()
+                    //model: configHolder.realPorts()
                     currentIndex:
                     {
                         for (var i in configHolder.realPorts())
@@ -340,7 +340,7 @@ Rectangle
                 Text
                 {
                     id: textStationType
-                    text: "stationType"
+                    text:qsTr("stationType")
                     color: colorText
                     font.pixelSize: fontText
                 }
@@ -384,7 +384,7 @@ Rectangle
 
                 Text
                 {
-                    text: "pathfilejdf"
+                    text: qsTr("pathfilejdf")
                     color: colorText
                     font.pixelSize: fontText
                 }
@@ -397,14 +397,14 @@ Rectangle
                     anchors.right: parent.right
                     anchors.leftMargin: columnMargin
                     height: comboboxSchemeShws.height
-                    text: configHolder.pathFileJdf()
+                    // text: configHolder.pathFileJdf()
                     attr_background_colorText: "black"
                     attr_background_color: "white"
                 }
 
                 Text
                 {
-                    text: "pathfilejson"
+                    text: qsTr("pathfilejson")
                     color: colorText
                     font.pixelSize: fontText
                 }
@@ -416,7 +416,7 @@ Rectangle
                     anchors.right: parent.right
                     anchors.leftMargin: columnMargin
                     height: comboboxSchemeShws.height
-                    text: configHolder.pathFileJson()
+                    //text: configHolder.pathFileJson()
                     attr_background_colorText: "black"
                     attr_background_color: "white"
                 }
@@ -440,7 +440,7 @@ Rectangle
 
                 Text
                 {
-                    text: "host"
+                    text:qsTr("host")
                     color: colorText
                     font.pixelSize: fontText
                 }
@@ -453,11 +453,11 @@ Rectangle
                     anchors.right: parent.right
                     anchors.leftMargin: columnMargin
                     height: comboboxSchemeShws.height
-                    text:
-                    {
-                        if (configHolder.hostShws() === "") "scissorhands.cloudapp.net"
-                            else configHolder.hostShws()
-                    }
+                    text: qsTr("Host Name")
+      //              {
+                        //if (configHolder.hostShws() === "") "scissorhands.cloudapp.net"
+                          //  else configHolder.hostShws()
+//                    }
 
                     attr_background_colorText: "black"
                     attr_background_color: "white"
@@ -465,7 +465,7 @@ Rectangle
 
                 Text
                 {
-                    text: "scheme"
+                    text: qsTr("scheme")
                     color: colorText
                     font.pixelSize: fontText
                 }
@@ -510,7 +510,7 @@ Rectangle
 
                 Text
                 {
-                    text: "host"
+                    text:qsTr("host")
                     color: colorText
                     font.pixelSize: fontText
                 }
@@ -523,18 +523,18 @@ Rectangle
                     anchors.right: parent.right
                     anchors.leftMargin: columnMargin
                     height: comboboxSchemeProfit.height
-                    text:
-                    {
-                        if (configHolder.hostProfit() === "") "profit-qa3.printfulfillmentservices.com"
-                            else configHolder.hostProfit()
-                    }
+                    text: qsTr("Host Name")
+//                    {
+                        //if (configHolder.hostProfit() === "") "profit-qa3.printfulfillmentservices.com"
+                        //    else configHolder.hostProfit()
+//                    }
                     attr_background_colorText: "black"
                     attr_background_color: "white"
                 }
 
                 Text
                 {
-                    text: "scheme"
+                    text: qsTr("scheme")
                     color: colorText
                     font.pixelSize: fontText
                 }

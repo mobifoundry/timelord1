@@ -7,11 +7,13 @@ MainApi::MainApi(QQmlContext *context, QObject *parent) :
     ccDb(new CuttingCourseDatabase(this)),
     profitApi(nullptr),
     shwsApi(nullptr)
+  /*
   #ifndef Q_OS_ANDROID
   ,cutterApi(nullptr),
     m_regVt2(0xDC30),
     m_regVt3(0xBA30)
   #endif
+    */
 {
     cntx->setContextProperty("MainApi", this);
     cntx->setContextProperty("configHolder", cnfgHolder);
@@ -27,11 +29,11 @@ MainApi::MainApi(QQmlContext *context, QObject *parent) :
 MainApi::~MainApi()
 {
     delete cnfgHolder;
-
+/*
 #ifndef Q_OS_ANDROID
     delete cutterApi;
 #endif
-
+*/
     logWrite("Stop program");
 }
 
@@ -50,7 +52,7 @@ void::MainApi::logIn(QString userName, QString password)
     cnfgHolder->initialize();
     cnfgHolder->setUsername(userName);
     cnfgHolder->setPassword(password.toUpper());
-
+/*
 #ifndef Q_OS_ANDROID
     if (cutterApi != nullptr)
     {
@@ -68,7 +70,7 @@ void::MainApi::logIn(QString userName, QString password)
     connect(cutterApi, &CutterApi::statusError, this, &MainApi::logWriteError);
     connect(cutterApi, &CutterApi::nextStep, this, &MainApi::nextStep);
 #endif
-
+*/
     if (userName.toUpper() == "DEMO" && password.toUpper() == "DEMO")
     {
         profitApi = new ProfitApiMockData(this);
@@ -156,7 +158,7 @@ void MainApi::loadCutCoursesFromDb()
 
 void MainApi::loadCutterProgram()
 {
-
+/*
 #ifndef Q_OS_ANDROID
     quint16 startRegister;
     qDebug()<<"MainApi::loadCutterProgram-"<<cnfgHolder->stationType();
@@ -175,7 +177,7 @@ void MainApi::loadCutterProgram()
 
     cutterApi->loadCutterProgram(shwsApi->getCutPositionList(), startRegister);
 #endif
-
+*/
 }
 
 void MainApi::deleteObjectList(QList<QObject *> &objectList)

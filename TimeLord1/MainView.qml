@@ -11,7 +11,7 @@ Rectangle {
         y: 22
         width: 200
         height: 100
-        text: qsTr( globals.jobButtonText )
+        text: qsTr( Job )
     }
 
     TextArea {

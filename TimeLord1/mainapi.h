@@ -62,13 +62,14 @@ private:
     CuttingCourseDatabase *ccDb;
    ProfitApi *profitApi;
    ShwsApi *shwsApi;
+   /*
 #ifndef Q_OS_ANDROID
     CutterApi *cutterApi;
 
     const quint16 m_regVt2;
     const quint16 m_regVt3;
 #endif
-
+*/
 };
 
 #endif // MAINAPI_H
