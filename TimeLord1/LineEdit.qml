@@ -10,7 +10,7 @@ TextField {
     property string  attr_background_text: ""
     property string k_on: "go%1".arg(attr_type_keyboard)
     property string k_stop: "stop%1".arg(attr_type_keyboard)
-
+    signal keyboardInput(string data)
     signal findRequest(string findId)
 
     width: 100
@@ -113,7 +113,7 @@ TextField {
     }
 
     Connections {
-        target:  buttonJob
+//        target:  jobButton
 //        onClickedJob: {
 //            lineedit.state = k_stop
 //        }
@@ -167,10 +167,12 @@ TextField {
         property int i: 0
         property string str_save: ""
 
-        visible: false
+        visible: true
 
         onApplyKeyboard: {
             lineedit.state = k_stop
+            console.log("apply keyboard",lineedit.text)
+            keyboardInput(lineedit.text)
         }
 
         onVisibleChanged: {

@@ -4,23 +4,24 @@ import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.1
 import QtQuick.Enterprise.Controls 1.1
 import QtQuick.Controls.Styles 1.2
-//import "qrc:/../js/Swedish.js" as Swedish
-//import "qrc:/../js/English.js" as English
-//import "qrc:/../js/Espana.js" as Espana
-//import "qrc:/../js/Finnish.js" as Finnish
-//import "qrc:/../js/MainView.js" as MainView
-//import "qrc:/../js/MainMenu.js" as MainMenu
-//import "qrc:/"
+import "Components"
 
 ApplicationWindow {
     id: globals
 
-    height: Screen.height
-    width: Screen.width
-    color: "green"
+    height: Screen.height/2
+    width: Screen.width/2
+    color: "purple"
     visible: true
-
-    signal clickedJob()
+    property var mainScreen
+    signal clickedJob
+    signal english
+    signal finnish
+    signal swedish
+    signal french
+    signal chinese
+    signal navajo
+    signal espana
 
     Image {
         id: banner
@@ -28,99 +29,20 @@ ApplicationWindow {
         y: 0
         fillMode: Image.PreserveAspectFit
         width: parent.width
-        height: parent.height/10
+        height: parent.height / 10
         source: "qrc:/../images/small_logo.png"
     }
-ColumnLayout{
-    x: parent.width/2
-    y: parent.height/10
-    LineEdit {
-        id:pswd
-        text: //"admin"
-              "1234567"//Todo Delete
-        echoMode: TextInput.Password
-        attr_background_text: qsTr("Password")
-        KeyNavigation.tab: jobName
-    }
-    LineEdit {
-        id: jobName
-        text: //"admin"
-              "Job Name"//Todo Delete
-        attr_background_text:qsTr("Username")
-        KeyNavigation.tab: pswd
-    }
-    Button {
-        id: jobButton
-
-        text: qsTr("Job")
-        anchors.fill: parent
-        style: ButtonStyle {
-            background: Rectangle {
-                implicitWidth: 100
-                implicitHeight: 25
-                border.width: control.activeFocus ? 2 : 1
-                border.color: "blue"
-                radius: 30
-                gradient: Gradient {
-                    GradientStop {
-                        position: 0
-                        color: control.pressed ? "#ccc" : "limegreen"
-                    }
-                    GradientStop {
-                        position: 1
-                        color: control.pressed ? "#aaa" : "seagreen"
-                    }
-                }
-            }
-        }
-
-        MouseArea {
-            anchors.rightMargin: 0
-            anchors.bottomMargin: 0
-            anchors.leftMargin: 0
-            anchors.topMargin: 0
-            anchors.fill: parent
-
-            onClicked: {
-                clickedJob()
-                MainMenu.mainMenu() // populate right and left menu keys
-                MainView.mainView()
-                mainScreen = Qt.createComponent("qrc:/MainView.qml")
-                if (jobName.text === "" || pswd.text === "")
-                {
-                    showError(qsTr("Please specify Job name and password"))
-                }
-                else
-                {
-                    MainApi.logIn(usrName.text,pswd.text);
-                    blocker.visible = true
-                    btn.enabled = false
-                    pswd.enabled = false
-                    usrName.enabled = false
-                    indic.visible = true
-                }
-            }
-
-    }
-
-
-}
-}
 
     RowLayout {
         id: rowLayout1
-        Button {
-            text: qsTr("English")
-        }
+        y: Screen.height / 1.5
         Button {
             id: englishButton
-
             text: qsTr("English")
-            anchors.fill: parent
             style: ButtonStyle {
                 background: Rectangle {
-                    implicitWidth: 100
-                    implicitHeight: 25
+                    implicitWidth: 250
+                    implicitHeight: 50
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -138,30 +60,30 @@ ColumnLayout{
             }
 
             MouseArea {
+                id: englishButtonMouseArea
+                cursorShape: Qt.PointingHandCursor
                 anchors.rightMargin: 0
                 anchors.bottomMargin: 0
                 anchors.leftMargin: 0
                 anchors.topMargin: 0
                 anchors.fill: parent
                 onClicked: {
-                    English.setEnglish()
-                    MainMenu.mainMenu() // populate right and left menu keys
-                    MainView.mainView()
-                    mainScreen = Qt.createComponent("qrc:/MainView.qml")
+                    english()
+                    console.log("english")
+                    screenLoader.setSource("qrc:/MainView.qml")
                 }
+            }
+
+            scale: englishButtonMouseArea.pressed ? 1.1 : 1.00
         }
-
-
-    }
         Button {
             id: swedishButton
 
             text: qsTr("Swedish")
-            anchors.fill: parent
             style: ButtonStyle {
                 background: Rectangle {
-                    implicitWidth: 100
-                    implicitHeight: 25
+                    implicitWidth: 250
+                    implicitHeight: 50
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -179,30 +101,29 @@ ColumnLayout{
             }
 
             MouseArea {
+                id: swedishButtonMouseArea
+                cursorShape: Qt.PointingHandCursor
                 anchors.rightMargin: 0
                 anchors.bottomMargin: 0
                 anchors.leftMargin: 0
                 anchors.topMargin: 0
                 anchors.fill: parent
                 onClicked: {
-                    English.setEnglish()
-                    MainMenu.mainMenu() // populate right and left menu keys
-                    MainView.mainView()
-                    mainScreen = Qt.createComponent("qrc:/MainView.qml")
+                    swedish()
+                    console.log("swedish")
+                    screenLoader.setSource("qrc:/MainView.qml")
                 }
+            }
+            scale: swedishButtonMouseArea.pressed ? 1.1 : 1.00
         }
-
-
-    }
         Button {
             id: finnishButton
 
             text: qsTr("Finnish")
-            anchors.fill: parent
             style: ButtonStyle {
                 background: Rectangle {
-                    implicitWidth: 100
-                    implicitHeight: 25
+                    implicitWidth: 250
+                    implicitHeight: 50
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -220,30 +141,28 @@ ColumnLayout{
             }
 
             MouseArea {
+                id: finnishButtonMouseArea
+                cursorShape: Qt.PointingHandCursor
                 anchors.rightMargin: 0
                 anchors.bottomMargin: 0
                 anchors.leftMargin: 0
                 anchors.topMargin: 0
                 anchors.fill: parent
                 onClicked: {
-                    English.setEnglish()
-                    MainMenu.mainMenu() // populate right and left menu keys
-                    MainView.mainView()
-                    mainScreen = Qt.createComponent("qrc:/MainView.qml")
+                    finnish()
+                    console.log("finnish")
+                    screenLoader.setSource("qrc:/MainView.qml")
                 }
+            }
+            scale: finnishButtonMouseArea.pressed ? 1.1 : 1.00
         }
-
-
-    }
         Button {
             id: espanaButton
-
             text: qsTr("Espana")
-            anchors.fill: parent
             style: ButtonStyle {
                 background: Rectangle {
-                    implicitWidth: 100
-                    implicitHeight: 25
+                    implicitWidth: 250
+                    implicitHeight: 50
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -261,30 +180,29 @@ ColumnLayout{
             }
 
             MouseArea {
+                id: espanaButtonMouseArea
+                cursorShape: Qt.PointingHandCursor
                 anchors.rightMargin: 0
                 anchors.bottomMargin: 0
                 anchors.leftMargin: 0
                 anchors.topMargin: 0
                 anchors.fill: parent
                 onClicked: {
-                    English.setEnglish()
-                    MainMenu.mainMenu() // populate right and left menu keys
-                    MainView.mainView()
-                    mainScreen = Qt.createComponent("qrc:/MainView.qml")
+                    espana()
+                    console.log("espana")
+                    screenLoader.setSource("qrc:/MainView.qml")
                 }
+            }
+            scale: espanaButtonMouseArea.pressed ? 1.1 : 1.00
         }
-
-
-    }
         Button {
             id: franceButton
 
             text: qsTr("France")
-            anchors.fill: parent
             style: ButtonStyle {
                 background: Rectangle {
-                    implicitWidth: 100
-                    implicitHeight: 25
+                    implicitWidth: 250
+                    implicitHeight: 50
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -302,30 +220,30 @@ ColumnLayout{
             }
 
             MouseArea {
+                id: frenchButtonMouseArea
+                cursorShape: Qt.PointingHandCursor
                 anchors.rightMargin: 0
                 anchors.bottomMargin: 0
                 anchors.leftMargin: 0
                 anchors.topMargin: 0
                 anchors.fill: parent
                 onClicked: {
-                    English.setEnglish()
-                    MainMenu.mainMenu() // populate right and left menu keys
-                    MainView.mainView()
-                    mainScreen = Qt.createComponent("qrc:/MainView.qml")
+                    french()
+                    console.log("french")
+                    screenLoader.setSource("qrc:/MainView.qml")
                 }
+            }
+            scale: frenchButtonMouseArea.pressed ? 1.1 : 1.00
         }
-
-
-    }
         Button {
             id: chineseButton
 
             text: qsTr("Chinese")
-            anchors.fill: parent
+
             style: ButtonStyle {
                 background: Rectangle {
-                    implicitWidth: 100
-                    implicitHeight: 25
+                    implicitWidth: 250
+                    implicitHeight: 50
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -343,30 +261,30 @@ ColumnLayout{
             }
 
             MouseArea {
+                id: chineseButtonMouseArea
+                cursorShape: Qt.PointingHandCursor
                 anchors.rightMargin: 0
                 anchors.bottomMargin: 0
                 anchors.leftMargin: 0
                 anchors.topMargin: 0
                 anchors.fill: parent
                 onClicked: {
-                    English.setEnglish()
-                    MainMenu.mainMenu() // populate right and left menu keys
-                    MainView.mainView()
-                    mainScreen = Qt.createComponent("qrc:/MainView.qml")
+                    chinese()
+                    console.log("chinese")
+                    screenLoader.setSource("qrc:/MainView.qml")
                 }
+            }
+            scale: chineseButtonMouseArea.pressed ? 1.1 : 1.00
         }
-
-
-    }
         Button {
             id: navajoButton
 
             text: qsTr("Navajo")
-            anchors.fill: parent
+
             style: ButtonStyle {
                 background: Rectangle {
-                    implicitWidth: 100
-                    implicitHeight: 25
+                    implicitWidth: 250
+                    implicitHeight: 50
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -384,23 +302,26 @@ ColumnLayout{
             }
 
             MouseArea {
+                id: navajoButtonMouseArea
+                cursorShape: Qt.PointingHandCursor
                 anchors.rightMargin: 0
                 anchors.bottomMargin: 0
                 anchors.leftMargin: 0
                 anchors.topMargin: 0
                 anchors.fill: parent
                 onClicked: {
-                    English.setEnglish()
-                    MainMenu.mainMenu() // populate right and left menu keys
-                    MainView.mainView()
-                    mainScreen = Qt.createComponent("qrc:/MainView.qml")
+                    navajo()
+                    console.log("navajo")
+                    screenLoader.setSource("qrc:/MainView.qml")
                 }
+            }
+            scale: navajoButtonMouseArea.pressed ? 1.1 : 1.00
         }
-
-
     }
-
-
-
-}
+    Loader {
+        id: screenLoader
+        anchors.centerIn: parent
+        anchors.fill: parent
+        smooth: true
+    }
 }
