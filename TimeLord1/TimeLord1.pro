@@ -1,6 +1,6 @@
 TEMPLATE = app
 QT = network qml quick sql widgets serialport
-# CONFIG += qtquickcompiler
+CONFIG += qtquickcompiler
 SOURCES += main.cpp \
     mainapi.cpp \
     configholder.cpp \
