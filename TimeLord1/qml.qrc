@@ -2,20 +2,20 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>MainForm.ui.qml</file>
-        <file>TimeLordOne.qml</file>
-        <file>MainViewScreen.qml</file>
+        <file>MaterialsView.qml</file>
+        <file>JobView.qml</file>
         <file>../images/small_logo.png</file>
-        <file>../js/English.js</file>
-        <file>../js/var.js</file>
-        <file>../js/MainMenu.js</file>
-        <file>../js/MainView.js</file>
-        <file>../js/Tone.js</file>
+        <file>../js/English.txt</file>
+        <file>../js/var.txt</file>
+        <file>../js/MainMenu.txt</file>
+        <file>../js/MainView.txt</file>
+        <file>../js/Tone.txt</file>
         <file>Globals.qml</file>
         <file>MainView.qml</file>
-        <file>../js/Swedish.js</file>
-        <file>../js/AboutView.js</file>
-        <file>../js/Espana.js</file>
-        <file>../js/Finnish.js</file>
+        <file>../js/Swedish.txt</file>
+        <file>../js/AboutView.txt</file>
+        <file>../js/Espana.txt</file>
+        <file>../js/Finnish.txt</file>
         <file>UniversalButton.qml</file>
         <file>LineEdit.qml</file>
         <file>Keyboard.qml</file>
@@ -70,7 +70,6 @@
         <file>Images/waste.png</file>
         <file>SplashScreen.qml</file>
         <file>Images/Icon.png</file>
-        <file>Property.qml</file>
         <file>Images/flag.png</file>
         <file>Images/Germany.png</file>
         <file>Images/louis.png</file>
@@ -78,5 +77,8 @@
         <file>Images/Picture 410.png</file>
         <file>Images/small_logo.png</file>
         <file>Images/Switzerland.png</file>
+        <file>TaskView.qml</file>
+        <file>TimeClockView.qml</file>
+        <file>ToDo.qml</file>
     </qresource>
 </RCC>

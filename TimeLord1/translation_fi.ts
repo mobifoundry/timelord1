@@ -4,28 +4,38 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="main.qml" line="391"/>
-        <source>Job </source>
+        <location filename="main.qml" line="41"/>
+        <source>English</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="426"/>
-        <source>Password</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="main.qml" line="438"/>
-        <source>Username</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="main.qml" line="478"/>
+        <location filename="main.qml" line="82"/>
         <source>Swedish</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="501"/>
+        <location filename="main.qml" line="122"/>
         <source>Finnish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="main.qml" line="161"/>
+        <source>Espana</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="main.qml" line="201"/>
+        <source>France</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="main.qml" line="241"/>
+        <source>Chinese</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="main.qml" line="282"/>
+        <source>Navajo</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
