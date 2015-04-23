@@ -24,15 +24,5 @@ CreateCuttingCourse::CreateCuttingCourse(const QByteArray &pressSheetTemplate)
 
 void CreateCuttingCourse::onResponseFinished(const QJsonDocument jsonDocument)
 {
-#ifndef Q_OS_WIN
-    Parser parser;
-    auto cuttingCourse = parser.parseCuttingCourse(jsonDocument.object());
 
-    QFile file(QString("cutCourse.json"));
-                    file.open(QIODevice::WriteOnly);
-                    file.write(jsonDocument.toJson());
-                    file.close();
-
-    emit sendCuttingCourseToQml(cuttingCourse);
-#endif
 }

@@ -4,29 +4,24 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="main.qml" line="391"/>
         <source>Job </source>
-        <translation>Job</translation>
+        <translation type="vanished">Job</translation>
     </message>
     <message>
-        <location filename="main.qml" line="426"/>
         <source>Password</source>
-        <translation>Password</translation>
+        <translation type="vanished">Password</translation>
     </message>
     <message>
-        <location filename="main.qml" line="438"/>
         <source>Username</source>
-        <translation>Username</translation>
+        <translation type="vanished">Username</translation>
     </message>
     <message>
-        <location filename="main.qml" line="478"/>
         <source>Swedish</source>
-        <translation>Swedish</translation>
+        <translation type="vanished">Swedish</translation>
     </message>
     <message>
-        <location filename="main.qml" line="501"/>
         <source>Finnish</source>
-        <translation>Finnish</translation>
+        <translation type="vanished">Finnish</translation>
     </message>
 </context>
 </TS>

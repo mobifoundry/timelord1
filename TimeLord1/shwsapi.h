@@ -2,6 +2,7 @@
 #define SHWSAPI_H
 
 #include <QList>
+#include <QFile>
 #include "cuttinglog.h"
 
 #include "abstractcontextapi.h"

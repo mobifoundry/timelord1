@@ -4,7 +4,7 @@
 #include "QJsonParseError"
 #include "QJsonDocument"
 
-#include "parser.h"
+
 #include "abstractapimethod.h"
 
 /*********************

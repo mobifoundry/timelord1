@@ -2,7 +2,7 @@
 #define PROFITAPIFILE_H
 
 #include "profitapi.h"
-#include "parser.h"
+
 
 class ProfitApiFile : public ProfitApi
 {

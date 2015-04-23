@@ -2,7 +2,6 @@
 #define SHWSAPIMETHODS_H
 
 #include "abstractapimethod.h"
-#include "parser.h"
 #include "cuttingcourse.h"
 
 /*********************

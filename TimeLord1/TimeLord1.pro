@@ -1,5 +1,7 @@
 TEMPLATE = app
 QT = network qml quick sql widgets serialport
+android:QT -= serialport
+
 CONFIG += qtquickcompiler
 SOURCES += main.cpp \
     mainapi.cpp \
@@ -14,7 +16,6 @@ SOURCES += main.cpp \
     profitapimethods.cpp \
     abstractapimethod.cpp \
     restclient.cpp \
-    parser.cpp \
     presssheet.cpp \
     presssheettemplate.cpp \
     presssheetitem.cpp \
@@ -57,7 +58,6 @@ HEADERS += \
     profitapimethods.h \
     abstractapimethod.h \
     restclient.h \
-    parser.h \
     presssheet.h \
     presssheettemplate.h \
     presssheetitem.h \

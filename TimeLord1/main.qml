@@ -9,8 +9,8 @@ import "Components"
 ApplicationWindow {
     id: globals
 
-    height: Screen.height/2
-    width: Screen.width/2
+    height: Screen.height
+    width: Screen.width
     color: "purple"
     visible: true
     property var mainScreen
@@ -33,16 +33,18 @@ ApplicationWindow {
         source: "qrc:/../images/small_logo.png"
     }
 
-    RowLayout {
+    Grid {
+        rows: 4
         id: rowLayout1
-        y: Screen.height / 1.5
+        y: Screen.height / 3
+        x: Screen.width / 4
         Button {
             id: englishButton
             text: qsTr("English")
             style: ButtonStyle {
                 background: Rectangle {
                     implicitWidth: 250
-                    implicitHeight: 50
+                    implicitHeight: 150
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -83,7 +85,7 @@ ApplicationWindow {
             style: ButtonStyle {
                 background: Rectangle {
                     implicitWidth: 250
-                    implicitHeight: 50
+                    implicitHeight: 150
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -123,7 +125,7 @@ ApplicationWindow {
             style: ButtonStyle {
                 background: Rectangle {
                     implicitWidth: 250
-                    implicitHeight: 50
+                    implicitHeight: 150
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -162,7 +164,7 @@ ApplicationWindow {
             style: ButtonStyle {
                 background: Rectangle {
                     implicitWidth: 250
-                    implicitHeight: 50
+                    implicitHeight: 150
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -202,7 +204,7 @@ ApplicationWindow {
             style: ButtonStyle {
                 background: Rectangle {
                     implicitWidth: 250
-                    implicitHeight: 50
+                    implicitHeight: 150
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -243,7 +245,7 @@ ApplicationWindow {
             style: ButtonStyle {
                 background: Rectangle {
                     implicitWidth: 250
-                    implicitHeight: 50
+                    implicitHeight: 150
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30
@@ -284,7 +286,7 @@ ApplicationWindow {
             style: ButtonStyle {
                 background: Rectangle {
                     implicitWidth: 250
-                    implicitHeight: 50
+                    implicitHeight: 150
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 30

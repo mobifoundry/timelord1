@@ -26,16 +26,7 @@ GetPressSheet::GetPressSheet(const int id)
 
 void GetPressSheet::onResponseFinished(const QJsonDocument jsonResponse)
 {
-    #ifndef Q_OS_WIN
-    Parser parser;
 
-    auto jsonObject = parser.parsePressSheet(jsonResponse.object());//todo delete
-
-    QList<QObject*> jsonObjectList;
-    jsonObjectList.append(jsonObject);
-
-    emit setModelPressSheetsListToQML(jsonObjectList);
-    #endif
 }
 
 /********************
@@ -48,20 +39,7 @@ GetPressSheetsList::GetPressSheetsList()
 
 void GetPressSheetsList::onResponseFinished(const QJsonDocument jsonResponse)
 {
-#ifndef Q_OS_WIN
-    Parser parser;
-    auto pss = parser.parsePressSheets(jsonResponse.array());
 
-    QList<QObject*> jsonObjectList;
-
-    for (auto i = 0; i < pss.size(); ++i)
-    {
-        jsonObjectList.append(pss.at(i));
-
-    }
-
-    emit setModelPressSheetsListToQML(jsonObjectList);
-#endif
 }
 
 /***********************
@@ -75,22 +53,7 @@ GetPressSheetTemplate::GetPressSheetTemplate(const QString pressSheetType)
 
 void GetPressSheetTemplate::onResponseFinished(const QJsonDocument jsonResponse)
 {
-#ifndef Q_OS_WIN
-    Parser parser;
-    QJsonObject jsonObjectPressSheetTemplate;
-    if (jsonResponse.array().size() > 0)
-    {
-        jsonObjectPressSheetTemplate = jsonResponse.array().at(0).toObject();
-    }
 
-    auto pstByteArray = parser.transformPressSheetTemplate(jsonObjectPressSheetTemplate);
-
-    QFile file(QString("Template.json"));
-                    file.open(QIODevice::WriteOnly);
-                    file.write(pstByteArray);
-                    file.close();
-    emit setModelPressSheetTemplateToQML(pstByteArray);
-#endif
 }
 
 /***********************
@@ -103,21 +66,7 @@ GetPressSheetItemsList::GetPressSheetItemsList(const long long pressSheetId)
 
 void GetPressSheetItemsList::onResponseFinished(const QJsonDocument jsonResponse)
 {
-#ifndef Q_OS_WIN
-    Parser parser;
-    auto psis = parser.parsePressSheetItems(jsonResponse.array());
 
-    QList<QObject*> jsonObjectList;
-
-    for (auto i = 0; i < psis.size(); ++i)
-    {
-        jsonObjectList.append(psis.at(i));
-
-        emit queryOrderItem(psis.at(i)->orderId(), psis.at(i)->orderItemId());
-    }
-
-    emit setModelPressSheetItemsListToQML(jsonObjectList);
-#endif
 }
 
 /***********************
@@ -130,15 +79,7 @@ GetOrderItem::GetOrderItem(const long long orderId, const QString orderItemId)
 
 void GetOrderItem::onResponseFinished(const QJsonDocument jsonResponse)
 {
-#ifndef Q_OS_WIN
-    Parser parser;
-    auto jsonObject = parser.parseOrderItem(jsonResponse.object());
 
-    QList<QObject*> jsonObjectList;
-    jsonObjectList.append(jsonObject);
-
-    emit setModelOrderItemToQML(jsonObjectList);
-#endif
 }
 
 /***********************
