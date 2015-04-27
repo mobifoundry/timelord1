@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>MainForm.ui.qml</file>
         <file>MaterialsView.qml</file>
         <file>JobView.qml</file>
         <file>../images/small_logo.png</file>

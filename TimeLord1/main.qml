@@ -23,6 +23,7 @@ ApplicationWindow {
     signal navajo
     signal espana
 
+
     Image {
         id: banner
         x: 0
@@ -73,6 +74,7 @@ ApplicationWindow {
                     english()
                     console.log("english")
                     screenLoader.setSource("qrc:/MainView.qml")
+
                 }
             }
 
@@ -114,6 +116,7 @@ ApplicationWindow {
                     swedish()
                     console.log("swedish")
                     screenLoader.setSource("qrc:/MainView.qml")
+
                 }
             }
             scale: swedishButtonMouseArea.pressed ? 1.1 : 1.00
@@ -154,6 +157,7 @@ ApplicationWindow {
                     finnish()
                     console.log("finnish")
                     screenLoader.setSource("qrc:/MainView.qml")
+
                 }
             }
             scale: finnishButtonMouseArea.pressed ? 1.1 : 1.00
@@ -193,6 +197,7 @@ ApplicationWindow {
                     espana()
                     console.log("espana")
                     screenLoader.setSource("qrc:/MainView.qml")
+
                 }
             }
             scale: espanaButtonMouseArea.pressed ? 1.1 : 1.00
@@ -233,6 +238,7 @@ ApplicationWindow {
                     french()
                     console.log("french")
                     screenLoader.setSource("qrc:/MainView.qml")
+
                 }
             }
             scale: frenchButtonMouseArea.pressed ? 1.1 : 1.00
@@ -274,6 +280,7 @@ ApplicationWindow {
                     chinese()
                     console.log("chinese")
                     screenLoader.setSource("qrc:/MainView.qml")
+
                 }
             }
             scale: chineseButtonMouseArea.pressed ? 1.1 : 1.00
@@ -315,6 +322,7 @@ ApplicationWindow {
                     navajo()
                     console.log("navajo")
                     screenLoader.setSource("qrc:/MainView.qml")
+
                 }
             }
             scale: navajoButtonMouseArea.pressed ? 1.1 : 1.00

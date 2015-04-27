@@ -19,7 +19,7 @@ Rectangle {
     }
 
     ColumnLayout {
-        x: parent.width / 2
+        x: (parent.width / 2.5)
         y: parent.height / 3
 
         LineEdit {

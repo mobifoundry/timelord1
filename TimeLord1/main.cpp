@@ -4,7 +4,8 @@ int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
     engine = new QQmlApplicationEngine();
-
+    QPageLayout appWindow;
+    appWindow.setOrientation(QPageLayout::Landscape);
     translator.load("translation_en.ts");
     app.installTranslator(&translator);
     sourceFile = "qrc:/main.qml";
