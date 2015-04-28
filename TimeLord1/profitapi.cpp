@@ -32,16 +32,7 @@ void ProfitApi::queryAuthorization()
 //    initStart(ptr_operation);
 }
 
-/***************
- *GetPressSheet*
- ***************/
-void ProfitApi::queryPressSheet(const long long id)
-{
-//    ptr_operation = new GetPressSheet(id);
-//    connect(ptr_operation, SIGNAL(setModelPressSheetsListToQML(QList<QObject*>)),
-//            this, SLOT(onSetModelPressSheetsListToQML(QList<QObject*>)));
-//    initStart(ptr_operation);
-}
+
 
 /********************
  *GetPressSheetsList*

@@ -21,13 +21,13 @@ Rectangle {
         source: "qrc:/../images/small_logo.png"
     }
     Grid {
-        y: parent.height / 5
-        x: parent.width / 5
+        y: 100
+        columnSpacing: 10
         ColumnLayout {
             Gauge {
                 id: gauge1
-                width: 250
-                height: 200
+                width: 200
+                height: 100
                 maximumValue: 100
                 value: 15
             }
@@ -37,8 +37,8 @@ Rectangle {
                 text: qsTr("TimeClock")
                 style: ButtonStyle {
                     background: Rectangle {
-                        implicitWidth: 250
-                        implicitHeight: 50
+                        implicitWidth: 200
+                        implicitHeight: 100
                         border.width: control.activeFocus ? 2 : 1
                         border.color: "blue"
                         radius: 30
@@ -76,16 +76,16 @@ Rectangle {
         ColumnLayout {
             Gauge {
                 id: gauge2
-                width: 250
-                height: 200
+                width: 200
+                height: 100
             }
             Button {
                 id: materialsButton
                 text: qsTr("Materials")
                 style: ButtonStyle {
                     background: Rectangle {
-                        implicitWidth: 250
-                        implicitHeight: 50
+                        implicitWidth: 200
+                        implicitHeight:100
                         border.width: control.activeFocus ? 2 : 1
                         border.color: "green"
                         radius: 30
@@ -122,23 +122,23 @@ Rectangle {
         ColumnLayout {
             Gauge {
                 id: gauge3
-                width: 250
-                height: 200
+                width: 200
+                height: 100
             }
             Button {
                 id: taskButton
                 text: qsTr("Tasks")
                 style: ButtonStyle {
                     background: Rectangle {
-                        implicitWidth: 250
-                        implicitHeight: 50
+                        implicitWidth: 200
+                        implicitHeight: 100
                         border.width: control.activeFocus ? 2 : 1
-                        border.color: "green"
+                        border.color: "red"
                         radius: 30
                         gradient: Gradient {
                             GradientStop {
                                 position: 0
-                                color: control.pressed ? "#ccc" : "green"
+                                color: control.pressed ? "#ccc" : "red"
                             }
                             GradientStop {
                                 position: 1

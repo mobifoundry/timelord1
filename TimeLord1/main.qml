@@ -30,7 +30,7 @@ ApplicationWindow {
         y: 0
         fillMode: Image.PreserveAspectFit
         width: parent.width
-        height: parent.height / 10
+        height: parent.height / 15
         source: "qrc:/../images/small_logo.png"
     }
 

@@ -25,7 +25,7 @@ signals:
 
 public slots:
     virtual void queryAuthorization();
-    virtual void queryPressSheet(const long long id);
+
     virtual void queryPressSheetsList();
     virtual void queryPressSheetTemplate(const QString &pressSheetType);
     virtual void queryPressSheetItemsList(const int pressSheetId);
