@@ -21,7 +21,7 @@ Rectangle {
         source: "qrc:/../images/small_logo.png"
     }
     Grid {
-        y: parent.height / 4
+        y: parent.height / 5
         x: parent.width / 5
         ColumnLayout {
             Gauge {

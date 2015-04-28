@@ -15,7 +15,6 @@
         <file>../js/AboutView.txt</file>
         <file>../js/Espana.txt</file>
         <file>../js/Finnish.txt</file>
-        <file>UniversalButton.qml</file>
         <file>LineEdit.qml</file>
         <file>Keyboard.qml</file>
         <file>KeyboardDigit.qml</file>
@@ -78,6 +77,5 @@
         <file>Images/Switzerland.png</file>
         <file>TaskView.qml</file>
         <file>TimeClockView.qml</file>
-        <file>ToDo.qml</file>
     </qresource>
 </RCC>

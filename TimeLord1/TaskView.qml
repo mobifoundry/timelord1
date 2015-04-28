@@ -13,32 +13,7 @@ Rectangle {
        height: parent.height / 10
        source: "qrc:/../images/small_logo.png"
    }
-   EnginioModel {
-       id:enginioModel
-       client: EnginioClient {
-           backendId: backendHelper.backendId
-           onError: {
-               console.log("Error:",JSON.stringify(reply.data))
-           }
-       }
-       query: {
-           "objectType":"object.todos"
-       }
-   }
-   ListView {
-       id: listview
-       model: enginioModel
-       delegate: listItemDelegate
-       anchors.top: header.bottom
-       anchors.bottom: footer.top
-       width: parent.width
-       clip: true
 
-       // Animations
-       add: Transition { NumberAnimation { properties: "y"; from: root.height; duration: 250 } }
-       removeDisplaced: Transition { NumberAnimation { properties: "y"; duration: 150 } }
-       remove: Transition { NumberAnimation { property: "opacity"; to: 0; duration: 150 } }
-   }
    BorderImage {
 
        anchors.left: parent.left

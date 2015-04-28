@@ -17,32 +17,30 @@ Rectangle {
         height: parent.height / 10
         source: "qrc:/../images/small_logo.png"
     }
-
-    ColumnLayout {
-        x: (parent.width / 2.5)
-        y: parent.height / 3
-
-        LineEdit {
-            id: jobName
-            text: ""
-            implicitWidth: 250
-            implicitHeight: 50
-            attr_background_text: qsTr("Job name")
-            onKeyboardInput: {
-                if (jobName.text === ""){
-                    messageDialog.visible=true
-                    messageDialog.open()
-                    console.log("rejected")
-                } else {
-                    console.log("accepted")
-                    selectJob(jobName.text)
-                    jobScreenLoader.setSource("qrc:/JobView.qml")
-                }
-
-
+    TextField {
+        id: jobName
+        x: 0
+        y: parent.height/4
+        width:250
+        height: 150
+         focus: true
+        text:""
+        placeholderText: qsTr("Enter Job name")
+        onEditingFinished: {
+          console.log("Enter")
+            if (jobName.text === ""){
+                messageDialog.visible=true
+                messageDialog.open()
+                console.log("rejected")
+            } else {
+                console.log("accepted")
+                selectJob(jobName.text)
+                jobScreenLoader.setSource("qrc:/JobView.qml")
             }
         }
     }
+
+
     MessageDialog {
         id: messageDialog
 
