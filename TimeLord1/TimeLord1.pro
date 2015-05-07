@@ -15,7 +15,6 @@ SOURCES += main.cpp \
     abstractcontextapi.cpp \
     profitapimethods.cpp \
     abstractapimethod.cpp \
-    restclient.cpp \
     presssheet.cpp \
     presssheettemplate.cpp \
     presssheetitem.cpp \
@@ -25,7 +24,8 @@ SOURCES += main.cpp \
     shwsapimethods.cpp \
     profitapimockdata.cpp \
     profitapifile.cpp \
-    shwsapimockdata.cpp
+    shwsapimockdata.cpp \
+    timeclock.cpp
 
 RESOURCES += qml.qrc
 
@@ -57,7 +57,6 @@ HEADERS += \
     abstractcontextapi.h \
     profitapimethods.h \
     abstractapimethod.h \
-    restclient.h \
     presssheet.h \
     presssheettemplate.h \
     presssheetitem.h \
@@ -67,5 +66,6 @@ HEADERS += \
     shwsapimethods.h \
     profitapimockdata.h \
     profitapifile.h \
-    shwsapimockdata.h
+    shwsapimockdata.h \
+    timeclock.h
 TRANSLATIONS = translation_en.ts translation_sp.ts translation_fr.ts

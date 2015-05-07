@@ -89,14 +89,7 @@ void ShwsApi::getCuttingCourse()
 
     if (m_cutCourse->steps().size() > 0)
     {
-        for (auto step : m_cutCourse->steps())
-        {
-            steps.append(step);
-        }
-        if (m_cutCourse->steps().at(0)->cuttingLogs().size() > 0)
-        {
-            firstCutLog.append(m_cutCourse->steps().at(0)->cuttingLogs().at(0));
-        }
+
     }
 
     createCcFile(m_cutCourse);
@@ -110,10 +103,7 @@ void ShwsApi::getCuttingLogsOfStep(int stepNumber)
 
     if (m_cutCourse->steps().size() > stepNumber)
     {
-        for (auto cutLog : m_cutCourse->steps().at(stepNumber)->cuttingLogs())
-        {
-            cutLogs.append(cutLog);
-        }
+
     }
 
     //qDebug() << m_cutCourse->steps.at(stepNumber)->cuttingLogs.at(0)->x();
@@ -126,21 +116,14 @@ void ShwsApi::getCellsOfCuttingLog(int stepNumber, int logNumber)
 
     if (m_cutCourse->steps().size() > stepNumber)
     {
-        for (auto cutLog : m_cutCourse->steps().at(stepNumber)->cuttingLogs())
-        {
-            cutLogs.append(cutLog);
 
-        }
     }
 
     QList<QObject *> cells;
 
     if (cutLogs.size() > logNumber)
     {
-        for (auto cell : cutLogs.at(logNumber)->cells())
-        {
-            cells.append(cell);
-        }
+
     }
 
     emit sendCellsToQml(cells, logNumber);
@@ -150,24 +133,14 @@ void ShwsApi::getPutAsideLogsOfStep(int stepNumber)
 {
     QList<QObject *> putAsideCutLogs;
 
-    for (auto putAsideCutLog : m_putAsideLogs)
-    {
-        putAsideCutLogs.append(putAsideCutLog);
-    }
 
-    emit sendPutAsideLogsToQml(putAsideCutLogs);
 }
 
 void ShwsApi::getFinishedLogsOfStep(int stepNumber)
 {
     QList<QObject *> finishedCutLogs;
 
-    for (auto finishedCutLog : m_finishedLogs)
-    {
-        finishedCutLogs.append(finishedCutLog);
-    }
 
-    emit sendFinishedLogsToQml(finishedCutLogs);
 }
 
 void ShwsApi::createCcFile(const CuttingCourse *cutCourse) const
@@ -177,11 +150,7 @@ void ShwsApi::createCcFile(const CuttingCourse *cutCourse) const
 
     QString string;
 
-    for (auto step : cutCourse->steps())
-    {
-        string.append(QString("%1\r\n0\r\n0\r\n1\r\n")
-                   .arg(static_cast<quint32>(step->cutPosition() * 1000)).toLocal8Bit());
-    }
+
     file.write(string.toLocal8Bit());
     file.close();
 }
@@ -190,10 +159,6 @@ QList<quint32> ShwsApi::getCutPositionList() const
 {
     QList <quint32> arrayCutPosition;
 
-    for (auto step : m_cutCourse->steps())
-    {
-        arrayCutPosition.append(static_cast<quint32>(step->cutPosition() * 1000));
-    }
 
     return arrayCutPosition;
 }

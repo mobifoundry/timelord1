@@ -6,8 +6,8 @@
 #include <QTimer>
 #include <QPointer>
 #include <QJsonParseError>
+#include <QNetworkReply>
 
-#include "restclient.h"
 
 class AbstractApiMethod : public QObject, public QRunnable
 {
@@ -45,7 +45,7 @@ public:
     void setAuthenticationMethod(const AbstractApiMethod::AuthenticationMethod &authenticationMethod);
 
 protected:
-    QPointer<RestClient> restclient;
+
     QPointer<QEventLoop> loopWaitResponse;
     QPointer<QTimer> timerWaitResponse;
     int m_maxTimeResponse;

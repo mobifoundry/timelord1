@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
     sourceFile = "qrc:/main.qml";
     sourceUrl = QUrl(sourceFile);
     engine->load( QUrl(sourceUrl ) );
-    MainApi *mA = new MainApi(viewer.rootContext());
+ //   MainApi *mA = new MainApi(viewer.rootContext());
+    TimeClock *jobTimeClock = new TimeClock();
     return app.exec();
 }

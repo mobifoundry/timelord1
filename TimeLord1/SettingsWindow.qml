@@ -59,7 +59,7 @@ Rectangle
             color: "Gainsboro"
         }
 
-        UniversalButton
+        Button
         {
             id: buttonOk
             width: parent.width / 7
@@ -103,7 +103,7 @@ Rectangle
             }
         }
 
-        UniversalButton
+        Button
         {
             id: buttonCancel
             width: buttonOk.width

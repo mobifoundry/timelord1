@@ -7,7 +7,7 @@ import QtQuick.LocalStorage 2.0
 import QtQuick.Particles 2.0
 import QtQuick.Window 2.0
 import QtQuick.XmlListModel 2.0
-import QtQuick.Enterprise.Controls 1.1
+import QtQuick.Enterprise.Controls 1.3
 
 Rectangle {
     color: "purple"

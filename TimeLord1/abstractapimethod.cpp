@@ -9,20 +9,7 @@ AbstractApiMethod::AbstractApiMethod() :
 
 AbstractApiMethod::~AbstractApiMethod()
 {
-    if (!restclient.isNull())
-    {
-        delete restclient;
-    }
 
-    if (!loopWaitResponse.isNull())
-    {
-        delete loopWaitResponse;
-    }
-
-    if (!timerWaitResponse.isNull())
-    {
-        delete timerWaitResponse;
-    }
 }
 
 QString AbstractApiMethod::userName() const
@@ -101,45 +88,8 @@ void AbstractApiMethod::run()
 
 void AbstractApiMethod::runOperation(const QString pathQuery, const QByteArray body)
 {
-    restclient = new RestClient();
-    switch (m_authenticationMethod)
-    {
-    case AbstractApiMethod::BASIC:
-        restclient->setAuthenticationMethod(RestClient::BASIC);
-        break;
 
-    case AbstractApiMethod::WSSE:
-        restclient->setAuthenticationMethod(RestClient::WSSE);
-        break;
-    }
 
-    restclient->setClientName(m_clientName);
-    restclient->setHost(m_host);
-    restclient->setScheme(m_scheme);
-    restclient->setUserName(m_userName);
-    restclient->setPassword(m_password);
-    connect(restclient, SIGNAL(responseFinished(QByteArray, int, QNetworkReply::NetworkError, QUrl)),
-            this, SLOT(onResponseStatus(QByteArray, int, QNetworkReply::NetworkError)));
-
-    loopWaitResponse = new QEventLoop();
-
-    timerWaitResponse = new QTimer();
-    connect(timerWaitResponse, SIGNAL(timeout()), this, SLOT(onTimeout()));
-    connect(restclient, SIGNAL(responseFinished(QByteArray, int, QNetworkReply::NetworkError, QUrl)),
-            timerWaitResponse, SLOT(stop()));
-
-    timerWaitResponse->start(m_maxTimeResponse);
-
-    if(body.isEmpty())
-    {
-        restclient->sendRequest(pathQuery, RestClient::GetOperation);
-    }
-    else
-    {
-        restclient->sendRequest(pathQuery, RestClient::PostOperation, body);
-    }
-
-    loopWaitResponse->exec();
 }
 
 void AbstractApiMethod::onResponseStatus(const QByteArray response,

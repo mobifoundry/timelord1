@@ -31,12 +31,9 @@
         <file>Components/ElbowTopLeft.qml</file>
         <file>Components/ElbowTopRight.qml</file>
         <file>Components/ErrorPane.qml</file>
-        <file>Components/Keyboard.qml</file>
-        <file>Components/KeyboardButton.qml</file>
         <file>Components/KeyboardDigit.qml</file>
         <file>Components/LineEdit.qml</file>
         <file>Components/LoadIndicator.qml</file>
-        <file>Components/UniversalButton.qml</file>
         <file>Images/add.ico</file>
         <file>Images/backspace.png</file>
         <file>Images/bg.jpg</file>

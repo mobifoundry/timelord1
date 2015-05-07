@@ -5,8 +5,8 @@ MainApi::MainApi(QQmlContext *context, QObject *parent) :
     cntx(context),
     cnfgHolder(new ConfigHolder("cuttingstation.conf", this)),
     ccDb(new CuttingCourseDatabase(this)),
-    profitApi(nullptr),
-    shwsApi(nullptr)
+    profitApi(0),
+    shwsApi(0)
   /*
   #ifndef Q_OS_ANDROID
   ,cutterApi(nullptr),
@@ -39,16 +39,16 @@ MainApi::~MainApi()
 
 void::MainApi::logIn(QString userName, QString password)
 {
-    if (profitApi != nullptr)
-    {
-        delete profitApi;
-        profitApi = nullptr;
-    }
-    if (shwsApi != nullptr)
-    {
-        delete shwsApi;
-        shwsApi = nullptr;
-    }
+//    if (profitApi != nullptr)
+//    {
+//        delete profitApi;
+//        profitApi = nullptr;
+//    }
+//    if (shwsApi != nullptr)
+//    {
+//        delete shwsApi;
+//        shwsApi = nullptr;
+ //   }
     cnfgHolder->initialize();
     cnfgHolder->setUsername(userName);
     cnfgHolder->setPassword(password.toUpper());
@@ -138,8 +138,8 @@ void MainApi::sendFileToShws(const QString &nameFile)
     QFile file(pathFile + "/" + nameFile);
     if (file.open(QIODevice::ReadOnly))
     {
-        auto byteArray = file.readAll();
-        shwsApi->queryCreateCuttingCourse(byteArray);
+ //       auto byteArray = file.readAll();
+ //       shwsApi->queryCreateCuttingCourse(byteArray);
     }
 }
 
@@ -182,10 +182,10 @@ void MainApi::loadCutterProgram()
 
 void MainApi::deleteObjectList(QList<QObject *> &objectList)
 {
-    for (auto *object : objectList)
-    {
-        delete object;
-    }
+//    for (auto *object : objectList)
+//    {
+//        delete object;
+//    }
     objectList.clear();
 }
 

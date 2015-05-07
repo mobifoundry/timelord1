@@ -303,10 +303,10 @@ QStringList ConfigHolder::realPorts() const
 {
     QStringList realPorts;
 #ifndef Q_OS_ANDROID
-    for (auto info : QSerialPortInfo::availablePorts())
-    {
-        realPorts.append(info.portName());
-    }
+ //   for (auto info : QSerialPortInfo::availablePorts())
+//    {
+//        realPorts.append(info.portName());
+ //   }
 #endif
     return realPorts;
 }
