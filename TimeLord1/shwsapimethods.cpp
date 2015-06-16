@@ -22,7 +22,4 @@ CreateCuttingCourse::CreateCuttingCourse(const QByteArray &pressSheetTemplate)
     m_body = pressSheetTemplate;
 }
 
-void CreateCuttingCourse::onResponseFinished(const QJsonDocument jsonDocument)
-{
 
-}

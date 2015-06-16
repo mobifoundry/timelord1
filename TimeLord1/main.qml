@@ -35,11 +35,18 @@ ApplicationWindow {
     }
 
     Grid {
+
         rows: 4
         id: rowLayout1
+        rowSpacing: 3
+        columnSpacing: 3
+        horizontalItemAlignment: Grid.AlignHCenter
+        verticalItemAlignment: Grid.AlignVCenter
         y: Screen.height / 3
         x: Screen.width / 4
+
         Button {
+
             id: englishButton
             text: qsTr("English")
             style: ButtonStyle {
@@ -334,4 +341,5 @@ ApplicationWindow {
         anchors.fill: parent
         smooth: true
     }
+
 }

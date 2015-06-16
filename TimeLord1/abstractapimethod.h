@@ -63,8 +63,6 @@ protected:
 
 
     virtual void onResponseFinished(const QJsonDocument jsonResponse) = 0;
-    void run();
-    void runOperation(const QString pathQuery, const QByteArray body = "");
 
 signals:
     void statusQuery(const int status);

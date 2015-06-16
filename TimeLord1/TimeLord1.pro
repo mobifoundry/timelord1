@@ -4,6 +4,7 @@ android:QT -= serialport
 
 CONFIG += qtquickcompiler
 SOURCES += main.cpp \
+    timeclock.cpp \
     mainapi.cpp \
     configholder.cpp \
     cuttingcoursedatabase.cpp \
@@ -22,10 +23,9 @@ SOURCES += main.cpp \
     jdffileinfo.cpp \
     shwsapi.cpp \
     shwsapimethods.cpp \
-    profitapimockdata.cpp \
     profitapifile.cpp \
-    shwsapimockdata.cpp \
-    timeclock.cpp
+    shwsapimockdata.cpp
+
 
 RESOURCES += qml.qrc
 
@@ -46,6 +46,7 @@ DISTFILES += \
 
 HEADERS += \
     main.hxx \
+    timeclock.h \
     mainapi.h \
     configholder.h \
     cuttingcoursedatabase.h \
@@ -64,8 +65,7 @@ HEADERS += \
     jdffileinfo.h \
     shwsapi.h \
     shwsapimethods.h \
-    profitapimockdata.h \
     profitapifile.h \
-    shwsapimockdata.h \
-    timeclock.h
+    shwsapimockdata.h
+
 TRANSLATIONS = translation_en.ts translation_sp.ts translation_fr.ts

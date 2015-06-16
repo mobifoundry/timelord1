@@ -18,6 +18,11 @@ Rectangle {
         height: parent.height / 10
         source: "qrc:/../images/small_logo.png"
     }
+    Rectangle {
+        border.color: "lightgreen"
+        border.width: 12
+        anchors.centerIn: parent
+
     TextField {
         id: jobName
         width: 250
@@ -44,8 +49,7 @@ Rectangle {
             }
         }
     }
-
-
+}
     Loader {
         id: jobScreenLoader
         anchors.centerIn: parent

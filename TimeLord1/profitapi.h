@@ -15,7 +15,6 @@ protected:
     QList<QObject *> m_pressSheetItemsList;
     QList<QObject *> m_orderItemsList;
 
-    virtual void initStart(AbstractApiMethod *operation);
 
 signals:
     void sendPressSheetTemplateToShws(const QByteArray &pstByteArray);
@@ -24,18 +23,8 @@ signals:
     void orderItemsReceived();
 
 public slots:
-    virtual void queryAuthorization();
 
-    virtual void queryPressSheetsList();
     virtual void queryPressSheetTemplate(const QString &pressSheetType);
-    virtual void queryPressSheetItemsList(const int pressSheetId);
-    virtual void queryOrderItem(const long long orderId, const QString orderItemId);
-    virtual void queryStartCutting(const long long  pressSheetId);
-    virtual void queryPauseCutting(const long long  pressSheetId);
-    virtual void queryResumeCutting(const long long  pressSheetId);
-    virtual void queryFinishCutting(const long long  pressSheetId);
-
-    void clearOrderItem();
 
 private slots:
     void onSetModelPressSheetsListToQML(QList<QObject*> pressSheetsList);

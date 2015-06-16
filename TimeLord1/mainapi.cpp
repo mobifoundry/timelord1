@@ -7,13 +7,7 @@ MainApi::MainApi(QQmlContext *context, QObject *parent) :
     ccDb(new CuttingCourseDatabase(this)),
     profitApi(0),
     shwsApi(0)
-  /*
-  #ifndef Q_OS_ANDROID
-  ,cutterApi(nullptr),
-    m_regVt2(0xDC30),
-    m_regVt3(0xBA30)
-  #endif
-    */
+
 {
     cntx->setContextProperty("MainApi", this);
     cntx->setContextProperty("configHolder", cnfgHolder);
@@ -29,52 +23,19 @@ MainApi::MainApi(QQmlContext *context, QObject *parent) :
 MainApi::~MainApi()
 {
     delete cnfgHolder;
-/*
-#ifndef Q_OS_ANDROID
-    delete cutterApi;
-#endif
-*/
     logWrite("Stop program");
 }
 
 void::MainApi::logIn(QString userName, QString password)
 {
-//    if (profitApi != nullptr)
-//    {
-//        delete profitApi;
-//        profitApi = nullptr;
-//    }
-//    if (shwsApi != nullptr)
-//    {
-//        delete shwsApi;
-//        shwsApi = nullptr;
- //   }
+
     cnfgHolder->initialize();
     cnfgHolder->setUsername(userName);
     cnfgHolder->setPassword(password.toUpper());
-/*
-#ifndef Q_OS_ANDROID
-    if (cutterApi != nullptr)
-    {
-        delete cutterApi;
-        cutterApi = nullptr;
-    }
-    cutterApi = new CutterApi(cnfgHolder->port(),
-                              cnfgHolder->port2(),
-                              cnfgHolder->baudrate(),
-                              static_cast<QSerialPort::DataBits>(cnfgHolder->databits()),
-                              static_cast<QSerialPort::Parity>(cnfgHolder->parity()),
-                              static_cast<QSerialPort::StopBits>(cnfgHolder->stopbits()),
-                              static_cast<QSerialPort::FlowControl>(cnfgHolder->flowcontrol()));
-    connect(cutterApi, &CutterApi::statusLoad, this, &MainApi::logWrite);
-    connect(cutterApi, &CutterApi::statusError, this, &MainApi::logWriteError);
-    connect(cutterApi, &CutterApi::nextStep, this, &MainApi::nextStep);
-#endif
-*/
+
     if (userName.toUpper() == "DEMO" && password.toUpper() == "DEMO")
     {
-        profitApi = new ProfitApiMockData(this);
-        shwsApi = new ShwsApiMockData(this);
+          shwsApi = new ShwsApiMockData(this);
     }
     else if (userName.toUpper() == "DEMOJDF" && password.toUpper() == "DEMOJDF")
     {
@@ -94,29 +55,11 @@ void::MainApi::logIn(QString userName, QString password)
         shwsApi = new ShwsApi(this);
     }
 
-//    connect(profitApi, &ProfitApi::sendAuthentificationStatus, this, &MainApi::authentificate);
-//    connect(profitApi, &ProfitApi::statusErrorQuery, this, &MainApi::statusError);
-    connect(profitApi, &ProfitApi::sendPressSheetTemplateToShws, shwsApi, &ShwsApi::queryCreateCuttingCourse);
-//    connect(shwsApi, &ShwsApi::statusErrorQuery, this, &MainApi::statusError);
 
-//    profitApi->setClientName(cnfgHolder->realName());
-//    profitApi->setHost(cnfgHolder->hostProfit());
-//    profitApi->setScheme(cnfgHolder->schemeProfit());
-//    profitApi->setUserName(cnfgHolder->username());
-//    profitApi->setPassword(cnfgHolder->password());
     cntx->setContextProperty("ProfitApi",profitApi);
 
     cnfgHolder->setUsernameShws("DEVELOPER");//todo delete
     cnfgHolder->setPasswordShws("123456");//todo delete
-
-//    shwsApi->setHost(cnfgHolder->hostShws());
-//    shwsApi->setScheme(cnfgHolder->schemeShws());
-//    shwsApi->setUserName(cnfgHolder->usernameShws());
-//    shwsApi->setPassword(cnfgHolder->passwordShws());
-    cntx->setContextProperty("ShwsApi",shwsApi);
-
-    profitApi->queryAuthorization();//Should be the last
-    shwsApi->queryWakeUpShws();
 }
 
 void MainApi::sendFileToShws(const QString &nameFile)
@@ -135,59 +78,7 @@ void MainApi::sendFileToShws(const QString &nameFile)
         statusError("Unknown file type");
     }
 
-    QFile file(pathFile + "/" + nameFile);
-    if (file.open(QIODevice::ReadOnly))
-    {
- //       auto byteArray = file.readAll();
- //       shwsApi->queryCreateCuttingCourse(byteArray);
-    }
-}
-
-void MainApi::loadCutCoursesFromDb()
-{
-//    ccs = ccDb->selectCuttingCourses();
-
-//    QList<QObject*> dataList;
-//    for(auto cc : ccs)
-//    {
-//        dataList.append(cc);
-//    }
-
-//    cntx->setContextProperty("cuttingCourses",QVariant::fromValue(dataList));
-}
-
-void MainApi::loadCutterProgram()
-{
-/*
-#ifndef Q_OS_ANDROID
-    quint16 startRegister;
-    qDebug()<<"MainApi::loadCutterProgram-"<<cnfgHolder->stationType();
-    if (cnfgHolder->stationType() == "CUTTING-VT2")
-    {
-        startRegister = m_regVt2;//Vt2
-    }
-    else if (cnfgHolder->stationType() == "CUTTING-VT3")
-    {
-        startRegister = m_regVt3;//Vt3
-    }
-    else
-    {
-        emit statusError("Wrong station type is chosen.");
-    }
-
-    cutterApi->loadCutterProgram(shwsApi->getCutPositionList(), startRegister);
-#endif
-*/
-}
-
-void MainApi::deleteObjectList(QList<QObject *> &objectList)
-{
-//    for (auto *object : objectList)
-//    {
-//        delete object;
-//    }
-    objectList.clear();
-}
+ }
 
 void MainApi::logWrite(QString message)
 {
@@ -230,15 +121,6 @@ void MainApi::showNextStep()
 {
    qDebug() << "MainApi::showNextStep->nextStep signal";
     emit nextStep();
-}
-
-void MainApi::loadChosenCutCourseFromDb()
-{
-//    cc = ccDb->selectChosenCuttingCourse();
-
-//    QList<QObject*> dataList;
-//    dataList.append(cc);
-//    cntx->setContextProperty("cuttingCourse",QVariant::fromValue(dataList));
 }
 
 void MainApi::authentificate(const int status)

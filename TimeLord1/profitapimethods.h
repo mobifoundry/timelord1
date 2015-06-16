@@ -18,7 +18,7 @@ public:
     AuthorizationProfit(const QString userName);
 
 private slots:
-    void onResponseFinished(const QJsonDocument );
+
 };
 
 /***************
@@ -31,7 +31,6 @@ public:
     GetPressSheet(const int id);
 
 private slots:
-    void onResponseFinished(const QJsonDocument jsonResponse);
 
 signals:
     void setModelPressSheetsListToQML(QList<QObject*> objectList);
@@ -47,7 +46,7 @@ public:
     GetPressSheetsList();
 
 private slots:
-    void onResponseFinished(const QJsonDocument jsonResponse);
+
 
 signals:
     void setModelPressSheetsListToQML(QList<QObject*> objectList);
@@ -63,7 +62,7 @@ public:
     GetPressSheetTemplate(const QString pressSheetType);
 
 private slots:
-    void onResponseFinished(const QJsonDocument jsonResponse);
+
 
 signals:
     void setModelPressSheetTemplateToQML(const QByteArray pstByteArray);
@@ -79,7 +78,6 @@ public:
     GetPressSheetItemsList(const long long  pressSheetId);
 
 private slots:
-    void onResponseFinished(const QJsonDocument jsonResponse);
 
 signals:
     void setModelPressSheetItemsListToQML(QList<QObject*> jsonObjectList);
@@ -96,7 +94,7 @@ public:
     GetOrderItem(const long long orderId, const QString orderItemId);
 
 protected:
-    void onResponseFinished(const QJsonDocument jsonResponse);
+
 
 signals:
     void setModelOrderItemToQML(QList<QObject*> jsonObjectList);
@@ -119,7 +117,6 @@ public:
 
     SetStatusWorkflow(const long long  pressSheetId, StatusWorkflow statusCutting);
 
-    void onResponseFinished(const QJsonDocument);
 
 signals:
     void setModelOrderItemToQML(QList<QObject*> jsonObjectList);

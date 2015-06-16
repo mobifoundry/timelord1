@@ -12,6 +12,6 @@ int main(int argc, char *argv[])
     sourceUrl = QUrl(sourceFile);
     engine->load( QUrl(sourceUrl ) );
  //   MainApi *mA = new MainApi(viewer.rootContext());
-    TimeClock *jobTimeClock = new TimeClock();
+    jobTimeClock = new TimeClock();
     return app.exec();
 }

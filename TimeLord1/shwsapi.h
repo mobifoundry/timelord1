@@ -31,21 +31,15 @@ private:
 
 private slots:
     void onSendCuttingCourseToQml(CuttingCourse *cutCourse);
-    void preprocessCuttingCourse();
+
 
 public slots:
-    void queryWakeUpShws();
+
     void queryCuttingCoursesList(const QString &id, const QString &version);
-    void queryCuttingCourse(const QString &id, const QString &version, const QString &generatorVersion);
-    void queryCreateCuttingCourse(const QByteArray &pressSheetTemplate);
-    void queryCuttingCourseFeedback(const QString &id, const QString &version, const QString &generatorVersion);
 
     void getCuttingCourse();
     void getCuttingLogsOfStep(int stepNumber);
     void getCellsOfCuttingLog(int stepNumber, int logNumber);
-
-    void getPutAsideLogsOfStep(int stepNumber);
-    void getFinishedLogsOfStep(int stepNumber);
 
 
 signals:

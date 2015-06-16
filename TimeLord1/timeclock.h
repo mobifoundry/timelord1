@@ -3,35 +3,50 @@
 
 #include <QObject>
 #include <QDateTime>
-class TimeClock
+#include <QStringList>
+
+class TimeClock : public QObject
 {
+    Q_OBJECT
 
 public:
-    Q_OBJECT
     Q_PROPERTY( QString name READ getName WRITE setName NOTIFY nameChanged )
-    QString getName() const
-    {
-        return m_name;
-    }
-
-public slots:
-    void setName(QString name)
-    {
-        if (m_name == name)
-            return;
-
-        m_name = name;
-        emit nameChanged(name);
-    }
-
-signals:
-    QString m_name;
-    void nameChanged(QString name);
-
-
     explicit TimeClock();
-    void clockIn(QString empName);
-    void clockOut(QString empName);
+    void setName(QString name);
+    QString getName() const;
+
+    void calulateElapsedTime();
+public slots:
+
+    void startClock(QString empName);
+    void stopClock(QString empName);
+signals:
+    void nameChanged(QString name);
+private:
+    QTime clock;
+    QString m_name;
+    int hh;
+    int mm;
+    int ss;
+    QString timeStamp;
+    QString LBL024;
+    QString LBL025;
+    QStringList clockInTimes;
+    QStringList clockedInEmps;
+    QStringList names;
+    int jobNum;
+    int empNum;
+    int empCount;
+    QList<int> totalTime;
+    int pad(int i);
+    int elapsedHours;
+    int milliSecondsRemaining;
+    int elapsedMinutes;
+    int elapsedSeconds;
+    int hour;
+    int minute;
+    int second;
+
 };
 
 #endif // TIMECLOCK_H

@@ -14,7 +14,43 @@ Rectangle {
        source: "qrc:/../images/small_logo.png"
    }
 
+   Rectangle {
+       border.color: "lightgreen"
+       border.width: 12
+       anchors.centerIn: parent
 
+   TextField {
+       id: taskName
+       width: 250
+       height: 100
 
+       focus: true
+       text:""
+       placeholderText: "Enter Task name"
+       anchors.verticalCenter: parent.verticalCenter
+       anchors.horizontalCenterOffset: 0
+       anchors.horizontalCenter: parent.horizontalCenter
+        visible: true
+        onEditingFinished: {
+         console.log("Enter")
+           if (taskName.text === ""){
+               messageDialog.visible=true
+               messageDialog.open()
+               console.log("rejected")
+
+           } else {
+               console.log("accepted")
+               selectTask(taskName.text)
+               jobScreenLoader.setSource("qrc:/JobView.qml")
+           }
+       }
+   }
+}
+   Loader {
+       id: jobScreenLoader
+       anchors.centerIn: parent
+       anchors.fill: parent
+       smooth: true
+   }
 }
 

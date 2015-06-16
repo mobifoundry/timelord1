@@ -12,14 +12,9 @@
 #include "shwsapi.h"
 #include "configholder.h"
 #include "cuttingcoursedatabase.h"
-
-#include "profitapimockdata.h"
 #include "profitapifile.h"
 #include "shwsapimockdata.h"
 
-#ifndef Q_OS_ANDROID
-#include "cutterapi.h"
-#endif
 
 class MainApi : public QObject
 {
@@ -41,15 +36,7 @@ public slots:
     QString getUserName() const;
 
     void sendFileToShws(const QString &nameFile);
-
-    void loadChosenCutCourseFromDb();
-    void loadCutCoursesFromDb();
-
-    void loadCutterProgram();
-
-    void deleteObjectList(QList<QObject*> &objectList);
-
-    void logWrite(QString message);
+     void logWrite(QString message);
     void logWriteError(QString message);
 
     void showNextStep();
@@ -62,14 +49,7 @@ private:
     CuttingCourseDatabase *ccDb;
    ProfitApi *profitApi;
    ShwsApi *shwsApi;
-   /*
-#ifndef Q_OS_ANDROID
-    CutterApi *cutterApi;
 
-    const quint16 m_regVt2;
-    const quint16 m_regVt3;
-#endif
-*/
 };
 
 #endif // MAINAPI_H

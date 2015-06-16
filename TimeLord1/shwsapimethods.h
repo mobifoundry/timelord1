@@ -29,7 +29,6 @@ public:
     CreateCuttingCourse(const QByteArray &pressSheetTemplate);
 
 protected slots:
-    void onResponseFinished(const QJsonDocument jsonDocument);
 
 signals:
     void sendCuttingCourseToQml(CuttingCourse* cutCourseList);

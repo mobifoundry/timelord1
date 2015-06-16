@@ -16,9 +16,6 @@
         <file>../js/Espana.txt</file>
         <file>../js/Finnish.txt</file>
         <file>LineEdit.qml</file>
-        <file>Keyboard.qml</file>
-        <file>KeyboardDigit.qml</file>
-        <file>KeyboardButton.qml</file>
         <file>../images/backspace.png</file>
         <file>../images/checkmark.png</file>
         <file>../images/keyboard.png</file>
@@ -31,7 +28,6 @@
         <file>Components/ElbowTopLeft.qml</file>
         <file>Components/ElbowTopRight.qml</file>
         <file>Components/ErrorPane.qml</file>
-        <file>Components/KeyboardDigit.qml</file>
         <file>Components/LineEdit.qml</file>
         <file>Components/LoadIndicator.qml</file>
         <file>Images/add.ico</file>

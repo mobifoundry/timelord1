@@ -22,6 +22,7 @@ Rectangle {
     }
     Grid {
         y: 100
+        anchors.fill: parent
         columnSpacing: 10
         ColumnLayout {
             Gauge {
@@ -57,12 +58,8 @@ Rectangle {
 
                 MouseArea {
                     id: timeClockButtonMouseArea
-                    cursorShape: Qt.PointingHandCursor
-                    anchors.rightMargin: 0
-                    anchors.bottomMargin: 0
-                    anchors.leftMargin: 0
-                    anchors.topMargin: 0
                     anchors.fill: parent
+                    cursorShape: Qt.PointingHandCursor
                     onClicked: {
 
                         console.log("Time Clock")

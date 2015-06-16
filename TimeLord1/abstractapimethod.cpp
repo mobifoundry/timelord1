@@ -81,16 +81,6 @@ void AbstractApiMethod::setAuthenticationMethod(const AbstractApiMethod::Authent
     m_authenticationMethod = authenticationMethod;
 }
 
-void AbstractApiMethod::run()
-{
-    runOperation(m_pathQuery, m_body);
-}
-
-void AbstractApiMethod::runOperation(const QString pathQuery, const QByteArray body)
-{
-
-
-}
 
 void AbstractApiMethod::onResponseStatus(const QByteArray response,
                                          const int status,
