@@ -8,12 +8,10 @@
 #include <QFile>
 
 #include "profitapi.h"
-#include "cuttingcourse.h"
-#include "shwsapi.h"
 #include "configholder.h"
-#include "cuttingcoursedatabase.h"
+
 #include "profitapifile.h"
-#include "shwsapimockdata.h"
+
 
 
 class MainApi : public QObject
@@ -42,13 +40,12 @@ public slots:
     void showNextStep();
 
 private:
-   CuttingCourse *cc;
-    QList<CuttingCourse*> ccs;
+
     QQmlContext *cntx;
     ConfigHolder *cnfgHolder;
-    CuttingCourseDatabase *ccDb;
+
    ProfitApi *profitApi;
-   ShwsApi *shwsApi;
+
 
 };
 

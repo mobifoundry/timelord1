@@ -4,9 +4,7 @@ MainApi::MainApi(QQmlContext *context, QObject *parent) :
     QObject(parent),
     cntx(context),
     cnfgHolder(new ConfigHolder("cuttingstation.conf", this)),
-    ccDb(new CuttingCourseDatabase(this)),
-    profitApi(0),
-    shwsApi(0)
+    profitApi(0)
 
 {
     cntx->setContextProperty("MainApi", this);
@@ -14,9 +12,7 @@ MainApi::MainApi(QQmlContext *context, QObject *parent) :
     connect(this, &MainApi::statusError, this, &MainApi::logWriteError);
 
     cntx->setContextProperty("cuttingCourses", 0);// todo delete
-    ccDb->openDatabase();
-    connect(ccDb, &CuttingCourseDatabase::statusErrorDb,
-            this, &MainApi::logWriteError);
+
     logWrite("Start program");
 }
 
@@ -32,28 +28,6 @@ void::MainApi::logIn(QString userName, QString password)
     cnfgHolder->initialize();
     cnfgHolder->setUsername(userName);
     cnfgHolder->setPassword(password.toUpper());
-
-    if (userName.toUpper() == "DEMO" && password.toUpper() == "DEMO")
-    {
-          shwsApi = new ShwsApiMockData(this);
-    }
-    else if (userName.toUpper() == "DEMOJDF" && password.toUpper() == "DEMOJDF")
-    {
-        profitApi = new ProfitApiFile(cnfgHolder->pathFileJdf(), "jdf", this);
-        connect(profitApi, &ProfitApi::sendPressSheetType, this, &MainApi::sendFileToShws);
-        shwsApi = new ShwsApi(this);
-    }
-    else if (userName.toUpper() == "DEMOJSON" && password.toUpper() == "DEMOJSON")
-    {
-        profitApi = new ProfitApiFile(cnfgHolder->pathFileJson(), "json", this);
-        connect(profitApi, &ProfitApi::sendPressSheetType, this, &MainApi::sendFileToShws);
-        shwsApi = new ShwsApi(this);
-    }
-    else
-    {
-        profitApi = new ProfitApi(this);
-        shwsApi = new ShwsApi(this);
-    }
 
 
     cntx->setContextProperty("ProfitApi",profitApi);

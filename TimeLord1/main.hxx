@@ -4,6 +4,7 @@
 #include <QQmlApplicationEngine>
 #include <QtGui/QGuiApplication>
 #include <QPageLayout>
+#include <QTranslator>
 #include "mainapi.h"
 #include "timeclock.h"
 //#include "qtquick2applicationviewer.h"

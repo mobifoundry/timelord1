@@ -3,7 +3,7 @@ import Enginio 1.0
 import QtQuick.Controls 1.2
 import QtQuick.Layouts 1.1
 Rectangle {
-   color:purple
+   color: "purple"
    Image {
        id: banner
        x: 0

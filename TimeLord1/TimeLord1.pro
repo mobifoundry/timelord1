@@ -7,11 +7,6 @@ SOURCES += main.cpp \
     timeclock.cpp \
     mainapi.cpp \
     configholder.cpp \
-    cuttingcoursedatabase.cpp \
-    cuttingcourse.cpp \
-    step.cpp \
-    cuttinglog.cpp \
-    cell.cpp \
     profitapi.cpp \
     abstractcontextapi.cpp \
     profitapimethods.cpp \
@@ -21,10 +16,7 @@ SOURCES += main.cpp \
     presssheetitem.cpp \
     orderitem.cpp \
     jdffileinfo.cpp \
-    shwsapi.cpp \
-    shwsapimethods.cpp \
-    profitapifile.cpp \
-    shwsapimockdata.cpp
+    profitapifile.cpp
 
 
 RESOURCES += qml.qrc
@@ -49,11 +41,6 @@ HEADERS += \
     timeclock.h \
     mainapi.h \
     configholder.h \
-    cuttingcoursedatabase.h \
-    cuttingcourse.h \
-    step.h \
-    cuttinglog.h \
-    cell.h \
     profitapi.h \
     abstractcontextapi.h \
     profitapimethods.h \
@@ -63,9 +50,6 @@ HEADERS += \
     presssheetitem.h \
     orderitem.h \
     jdffileinfo.h \
-    shwsapi.h \
-    shwsapimethods.h \
-    profitapifile.h \
-    shwsapimockdata.h
+    profitapifile.h
 
 TRANSLATIONS = translation_en.ts translation_sp.ts translation_fr.ts

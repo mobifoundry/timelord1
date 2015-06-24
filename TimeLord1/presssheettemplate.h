@@ -6,8 +6,6 @@
 #include <QDateTime>
 #include <QMap>
 
-#include "cell.h"
-
 class PressSheetTemplate : public QObject
 {
     Q_OBJECT
